@@ -1,0 +1,1270 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("fonts/MyriadPro-Bold.eot");
+  src: local("☺"), url("fonts/MyriadPro-Bold.woff") format("woff"), url("fonts/MyriadPro-Bold.ttf") format("truetype"), url("fonts/MyriadPro-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: 700;
+}
+@font-face {
+  font-family: "Myriad Pro - Bold It";
+  src: url("fonts/MyriadPro-BoldIt.eot");
+  src: local("☺"), url("fonts/MyriadPro-BoldIt.woff") format("woff"), url("fonts/MyriadPro-BoldIt.ttf") format("truetype"), url("fonts/MyriadPro-BoldIt.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Myriad Pro - It";
+  src: url("fonts/MyriadPro-It.eot");
+  src: local("☺"), url("fonts/MyriadPro-It.woff") format("woff"), url("fonts/MyriadPro-It.ttf") format("truetype"), url("fonts/MyriadPro-It.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Myriad Pro";
+  src: url("fonts/MyriadPro-Regular.eot");
+  src: local("☺"), url("fonts/MyriadPro-Regular.woff") format("woff"), url("fonts/MyriadPro-Regular.ttf") format("truetype"), url("fonts/MyriadPro-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: 400;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rowj {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  top: 0;
+  left: 0;
+}
+
+.bgp {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  top: 0;
+  left: 0;
+}
+
+.bgf {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  top: 0;
+  left: 0;
+}
+
+.bgw {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.bgf {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -5;
+  top: 0;
+  left: 0;
+}
+
+.bgb {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  top: 0;
+  left: 0;
+}
+
+@media (max-width: 787px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    margin-right: 20px;
+    margin-top: 35px;
+  }
+  .header__burger span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    top: 9px;
+    transition: all 0.3s;
+  }
+
+  .header__burger:before,
+.header__burger:after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s;
+  }
+
+  .header__burger:before {
+    top: 0;
+  }
+
+  .header__burger:after {
+    bottom: 0;
+  }
+
+  .h-menu__list {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .header__burger.burger-active span {
+    transform: scale(0);
+  }
+
+  .header__burger.burger-active:before {
+    transform: rotate(45deg);
+    top: 9px;
+  }
+
+  .header__burger.burger-active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+  }
+
+  .h-menu {
+    position: relative;
+  }
+
+  .h-menu__list {
+    position: absolute;
+    top: -700px;
+  }
+
+  .h-menu__link {
+    margin-top: 7px;
+  }
+
+  .h-menu__list.burger-active {
+    top: 50px;
+  }
+}
+.wrappper {
+  overflow: hidden;
+}
+
+.header {
+  padding: 70px 0 300px 0;
+  position: relative;
+}
+@media (max-width: 1200px) {
+  .header {
+    padding: 50px 0 150px 0;
+  }
+}
+@media (max-width: 992px) {
+  .header {
+    padding: 30px 0 90px 0;
+  }
+}
+@media (max-width: 787px) {
+  .header {
+    padding: 20px 0 60px 0;
+  }
+}
+@media (max-width: 540px) {
+  .header {
+    padding-bottom: 20px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 380px) {
+  .header {
+    padding-bottom: 10px;
+  }
+}
+.header__row {
+  margin-top: 150px;
+}
+@media (max-width: 1200px) {
+  .header__row {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 992px) {
+  .header__row {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 787px) {
+  .header__row {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 540px) {
+  .header__row {
+    margin-top: 15px;
+    flex-direction: column;
+  }
+}
+.header__container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.header__menu {
+  display: flex;
+}
+@media (max-width: 787px) {
+  .header__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.header__logo-img {
+  max-width: 321px;
+  max-height: 112px;
+}
+.header__logo-img img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .header__logo-img {
+    max-width: 271px;
+    max-height: 90px;
+  }
+}
+@media (max-width: 787px) {
+  .header__logo-img {
+    max-width: 270px;
+    max-height: 94px;
+  }
+}
+.header__column {
+  position: relative;
+  padding: 44px 70px 32px 70px;
+}
+@media (max-width: 1200px) {
+  .header__column {
+    padding: 39px 60px 27px 60px;
+  }
+}
+@media (max-width: 992px) {
+  .header__column {
+    padding: 30px 45px 20px 45px;
+  }
+}
+@media (max-width: 787px) {
+  .header__column {
+    padding: 20px 35px 15px 35px;
+  }
+}
+@media (max-width: 540px) {
+  .header__column {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.header__column-opacity {
+  opacity: 0.4;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+@media (max-width: 1200px) {
+  .header__column-opacity {
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}
+@media (max-width: 992px) {
+  .header__column-opacity {
+    padding-right: 55px;
+    padding-left: 55px;
+  }
+}
+@media (max-width: 787px) {
+  .header__column-opacity {
+    padding-right: 35px;
+    padding-left: 35px;
+  }
+}
+@media (max-width: 540px) {
+  .header__column-opacity {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.header__column-img {
+  max-width: 372px;
+  max-height: 206px;
+}
+.header__column-img img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 540px) {
+  .header__column-img {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+.h-menu__list {
+  display: flex;
+  margin-top: 40px;
+  margin-left: 200px;
+}
+@media (max-width: 1200px) {
+  .h-menu__list {
+    margin-left: 127px;
+  }
+}
+@media (max-width: 992px) {
+  .h-menu__list {
+    margin-left: 65px;
+  }
+}
+@media (max-width: 787px) {
+  .h-menu__list {
+    margin-left: 0;
+    margin-top: 15px;
+    margin-left: -50px;
+  }
+}
+.h-menu__link {
+  color: #ffffff;
+  font-family: "Myriad Pro - Bold It";
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  margin-right: 30px;
+  transition: all 0.9s;
+}
+@media (max-width: 1200px) {
+  .h-menu__link {
+    font-size: 20px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .h-menu__link {
+    font-size: 17px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 787px) {
+  .h-menu__link {
+    font-size: 15px;
+    margin-right: 0;
+  }
+}
+.h-menu__link:hover {
+  color: #f1ac11;
+  position: relative;
+}
+.h-menu__link:hover:after {
+  position: absolute;
+  content: "";
+  /* Style for "Obdélník 6" */
+  width: 100%;
+  height: 3px;
+  background-color: #f1ac11;
+  left: 0;
+  bottom: -15px;
+}
+@media (max-width: 992px) {
+  .h-menu__link:hover:after {
+    display: none;
+  }
+}
+.h-menu__link-active {
+  color: #f1ac11;
+  position: relative;
+}
+.h-menu__link-active:after {
+  position: absolute;
+  content: "";
+  /* Style for "Obdélník 6" */
+  width: 100%;
+  height: 3px;
+  background-color: #f1ac11;
+  left: 0;
+  bottom: -15px;
+}
+@media (max-width: 992px) {
+  .h-menu__link-active:after {
+    display: none;
+  }
+}
+.h-item {
+  /*&__text-last{
+  	left: 108px;
+  }
+  &__text-first{
+  	left: 96px;
+  }*/
+}
+.h-item__text {
+  text-align: center;
+  color: #000000;
+  font-family: "Myriad Pro";
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.9px;
+  transition: all 0.9s;
+  margin-bottom: 29px;
+}
+.h-item__text:hover {
+  color: #2b2b2b;
+}
+@media (max-width: 1200px) {
+  .h-item__text {
+    font-size: 30px;
+    margin-bottom: 23px;
+  }
+}
+@media (max-width: 992px) {
+  .h-item__text {
+    font-size: 22px;
+    margin-bottom: 17px;
+  }
+}
+@media (max-width: 787px) {
+  .h-item__text {
+    font-size: 17px;
+    margin-bottom: 14px;
+  }
+}
+.h-item__btn {
+  text-align: center;
+}
+.h-item__btn button {
+  text-align: center;
+  width: 140px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #f1ac11;
+  color: #2b2b2b;
+  font-family: "Myriad Pro";
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #2b2b2b;
+  letter-spacing: 0.6px;
+  transition: all 0.9s;
+}
+.h-item__btn button:hover {
+  background-color: #000;
+  color: #2b2b2b;
+}
+@media (max-width: 1200px) {
+  .h-item__btn button {
+    width: 120px;
+  }
+}
+@media (max-width: 992px) {
+  .h-item__btn button {
+    width: 80px;
+  }
+}
+.menu {
+  padding-top: 80px;
+}
+@media (max-width: 1200px) {
+  .menu {
+    padding-top: 60px;
+  }
+}
+@media (max-width: 992px) {
+  .menu {
+    padding-top: 40px;
+  }
+}
+.menu__container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .menu__container {
+    padding: 0 10px;
+  }
+}
+.menu__title {
+  color: #f1ac11;
+  font-family: "Myriad Pro - It";
+  font-size: 42px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 2.1px;
+}
+@media (max-width: 1200px) {
+  .menu__title {
+    font-size: 40px;
+  }
+}
+@media (max-width: 992px) {
+  .menu__title {
+    font-size: 35px;
+  }
+}
+.menu__subtitle {
+  margin-top: 40px;
+  color: #2b2b2b;
+  font-family: "Myriad Pro - It";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  transition: all 0.9s;
+}
+.menu__subtitle:hover {
+  color: #007825;
+}
+@media (max-width: 992px) {
+  .menu__subtitle {
+    margin-top: 30px;
+    margin-left: 15px;
+  }
+}
+.menu__foot {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .menu__foot {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 787px) {
+  .menu__foot {
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 540px) {
+  .menu__foot {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 380px) {
+  .menu__foot {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+.menu__string {
+  display: flex;
+  max-width: 429px;
+}
+@media (max-width: 787px) {
+  .menu__string {
+    margin-top: 15px;
+  }
+}
+@media (max-width: 540px) {
+  .menu__string {
+    margin-top: 10px;
+  }
+}
+.menu__left {
+  margin-right: 30px;
+  max-width: 80px;
+  max-height: 80px;
+}
+.menu__left img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .menu__left {
+    margin-right: 10px;
+    max-width: 70px;
+    max-height: 70px;
+  }
+}
+@media (max-width: 380px) {
+  .menu__left {
+    max-width: 50px;
+    max-height: 50px;
+    margin-right: 5px;
+  }
+}
+.menu__right {
+  margin-top: 18px;
+}
+.menu__right-text {
+  color: #2b2b2b;
+  font-family: "Myriad Pro";
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+}
+@media (max-width: 992px) {
+  .menu__right-text {
+    font-size: 15px;
+    letter-spacing: 0.7px;
+  }
+}
+@media (max-width: 540px) {
+  .menu__right-text {
+    letter-spacing: 0.5px;
+    font-size: 10px;
+  }
+}
+.menu__right-subtext {
+  margin-top: 20px;
+  color: #bcbcbc;
+  font-family: "Myriad Pro - It";
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.65px;
+}
+@media (max-width: 540px) {
+  .menu__right-subtext {
+    margin-top: 10px;
+    font-size: 8px;
+    letter-spacing: 0.4px;
+  }
+}
+.num {
+  padding: 15px;
+  padding-top: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  background: url("img/num-bg.png") 7px 12px no-repeat;
+}
+@media (max-width: 283px) {
+  .num {
+    background: none;
+    padding: 0;
+  }
+}
+
+.num-on {
+  background: url("img/num-bg.png") -1px 12px no-repeat;
+}
+@media (max-width: 283px) {
+  .num-on {
+    background: none;
+    padding: 0;
+  }
+}
+
+.order {
+  padding: 80px 0 60px 0;
+}
+@media (max-width: 1200px) {
+  .order {
+    padding: 60px;
+  }
+}
+@media (max-width: 992px) {
+  .order {
+    padding: 40px;
+  }
+}
+@media (max-width: 787px) {
+  .order {
+    padding: 20px;
+  }
+}
+.order__container {
+  max-width: 815px;
+  margin: 0 auto;
+}
+.order__left {
+  max-width: 450px;
+  max-height: 300px;
+}
+.order__left img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 992px) {
+  .order__left {
+    max-width: 350px;
+    max-height: 200px;
+  }
+}
+@media (max-width: 787px) {
+  .order__left {
+    max-width: 300px;
+    max-height: 170px;
+  }
+}
+@media (max-width: 657px) {
+  .order__left {
+    max-height: 190px;
+  }
+}
+@media (max-width: 598px) {
+  .order__left {
+    display: none;
+  }
+}
+.order__right {
+  padding: 30px 0;
+}
+@media (max-width: 992px) {
+  .order__right {
+    padding: 0;
+  }
+}
+.order__title {
+  color: #f1ac11;
+  font-family: "Myriad Pro - It";
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  transition: all 0.9s;
+}
+.order__title:hover {
+  color: #c8c8c8;
+}
+@media (max-width: 598px) {
+  .order__title {
+    text-align: center;
+  }
+}
+.order__subtitle {
+  color: #2b2b2b;
+  font-family: "Myriad Pro - It";
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  letter-spacing: 1.2px;
+}
+@media (max-width: 992px) {
+  .order__subtitle {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 787px) {
+  .order__subtitle {
+    letter-spacing: 0.8px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 598px) {
+  .order__subtitle {
+    text-align: center;
+    letter-spacing: 0.6px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 380px) {
+  .order__subtitle {
+    letter-spacing: 0.4px;
+    font-size: 14px;
+  }
+}
+.order__text {
+  max-width: 333px;
+  color: #d4d4d4;
+  font-family: "Myriad Pro - It";
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 24px;
+  letter-spacing: 0.7px;
+}
+@media (max-width: 992px) {
+  .order__text {
+    margin-bottom: 15px;
+  }
+}
+@media (max-width: 787px) {
+  .order__text {
+    margin-bottom: 5px;
+    max-width: 300px;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+}
+@media (max-width: 657px) {
+  .order__text {
+    max-width: 250px;
+  }
+}
+@media (max-width: 598px) {
+  .order__text {
+    max-width: 500px;
+    margin: 0 10px;
+    margin-bottom: 15px;
+  }
+}
+.order__btn {
+  transition: all 0.4s;
+}
+.order__btn:hover {
+  padding-top: 2px;
+}
+.order__btn button {
+  width: 100px;
+  height: 32px;
+  border-radius: 2px;
+  background-color: #f1ac11;
+  box-shadow: 0 3px 0 #5f4303;
+  color: #2b2b2b;
+  font-family: "Myriad Pro - It";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  transition: all 0.4s;
+}
+.order__btn button:hover {
+  box-shadow: 0 0.1px 0 #5f4303;
+}
+.people {
+  position: relative;
+  padding: 80px 0;
+}
+@media (max-width: 1200px) {
+  .people {
+    padding: 60px 0;
+  }
+}
+@media (max-width: 992px) {
+  .people {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 787px) {
+  .people {
+    padding: 20px 0;
+  }
+}
+@media (max-width: 540px) {
+  .people {
+    padding: 10px 0;
+  }
+}
+@media (max-width: 380px) {
+  .people {
+    padding: 5px 0;
+  }
+}
+.people__block {
+  margin: 0 auto;
+  padding: 80px 68px;
+  max-width: 620px;
+  position: relative;
+}
+@media (max-width: 992px) {
+  .people__block {
+    padding: 60px 50px;
+  }
+}
+@media (max-width: 540px) {
+  .people__block {
+    padding: 40px 30px;
+  }
+}
+@media (max-width: 380px) {
+  .people__block {
+    padding: 20px 0;
+  }
+}
+.people__title {
+  text-align: center;
+  color: #000000;
+  font-family: "Myriad Pro - It";
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+}
+@media (max-width: 540px) {
+  .people__title {
+    font-size: 18px;
+    letter-spacing: 0.8px;
+  }
+}
+.people__text-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0;
+}
+@media (max-width: 992px) {
+  .people__text-row {
+    margin: 20px 0;
+  }
+}
+@media (max-width: 540px) {
+  .people__text-row {
+    margin: 10px 0;
+  }
+}
+@media (max-width: 380px) {
+  .people__text-row {
+    flex-direction: column;
+  }
+}
+@media (max-width: 380px) {
+  .people__img {
+    display: none;
+  }
+}
+.people__left-text {
+  color: #f1ac11;
+  font-family: "Myriad Pro";
+  font-size: 22px;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  margin-top: 13px;
+}
+@media (max-width: 540px) {
+  .people__left-text {
+    font-size: 18px;
+    margin-top: 8px;
+    letter-spacing: 0.8px;
+  }
+}
+@media (max-width: 380px) {
+  .people__left-text {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+.people__right-text {
+  color: #000000;
+  font-family: "Myriad Pro - It";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.9px;
+}
+@media (max-width: 540px) {
+  .people__right-text {
+    font-size: 16px;
+    letter-spacing: 0.6px;
+  }
+}
+@media (max-width: 380px) {
+  .people__right-text {
+    text-align: center;
+  }
+}
+.people__btn {
+  text-align: center;
+}
+.people__btn button {
+  width: 130px;
+  height: 32px;
+  border-radius: 2px;
+  background-color: #f1ac11;
+  color: #2b2b2b;
+  font-family: "Myriad Pro - It";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  transition: all 0.9s;
+}
+.people__btn button:hover {
+  background-color: #000;
+}
+.footer {
+  position: relative;
+  padding: 80px 0;
+}
+@media (max-width: 1200px) {
+  .footer {
+    padding: 60px 20px;
+  }
+}
+@media (max-width: 992px) {
+  .footer {
+    padding: 40px 10px;
+  }
+}
+@media (max-width: 787px) {
+  .footer {
+    padding: 20px 10px;
+  }
+}
+@media (max-width: 540px) {
+  .footer {
+    padding: 10px 10px;
+  }
+}
+.footer__container {
+  max-width: 1026px;
+  margin: 0 auto;
+}
+.footer__left-row {
+  width: 513px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .footer__left-row {
+    width: 400px;
+  }
+}
+@media (max-width: 787px) {
+  .footer__left-row {
+    width: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .footer__left-row {
+    display: none;
+  }
+}
+@media (max-width: 787px) {
+  .footer__column:nth-child(3) {
+    display: none;
+  }
+}
+.footer__title {
+  color: #ffffff;
+  font-family: "Myriad Pro - It";
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+}
+@media (max-width: 992px) {
+  .footer__title {
+    letter-spacing: 0.8px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 787px) {
+  .footer__title {
+    letter-spacing: 0.6px;
+    font-size: 18px;
+  }
+}
+.footer__list {
+  margin-top: 28px;
+}
+@media (max-width: 992px) {
+  .footer__list {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 787px) {
+  .footer__list {
+    margin-top: 18px;
+  }
+}
+.footer__link {
+  color: #bbbbbb;
+  font-family: "Myriad Pro - It";
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.85px;
+  margin-bottom: 8px;
+}
+@media (max-width: 992px) {
+  .footer__link {
+    letter-spacing: 0.4px;
+    margin-bottom: 6px;
+  }
+}
+@media (max-width: 787px) {
+  .footer__link {
+    letter-spacing: 0.3px;
+    margin-bottom: 5px;
+    font-size: 15px;
+  }
+}
+.footer__r-title {
+  color: #ffffff;
+  font-family: "Myriad Pro - It";
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.1px;
+  margin-bottom: 43px;
+}
+@media (max-width: 992px) {
+  .footer__r-title {
+    letter-spacing: 0.8px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 787px) {
+  .footer__r-title {
+    letter-spacing: 0.6px;
+    font-size: 18px;
+    text-align: right;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .footer__r-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .footer__r-title {
+    margin-bottom: 10px;
+  }
+}
+.footer__input {
+  transition: all 0.9s;
+  width: 223px;
+  height: 32px;
+  background-color: #ffffff;
+  opacity: 0.4;
+  color: #ffffff;
+  font-family: "Myriad Pro - It";
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  padding-left: 15px;
+}
+.footer__input:hover {
+  background-color: #000;
+}
+@media (max-width: 787px) {
+  .footer__input {
+    width: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .footer__input {
+    width: 250px;
+  }
+}
+@media (max-width: 380px) {
+  .footer__input {
+    width: 180px;
+  }
+}
+@media (max-width: 308px) {
+  .footer__input {
+    width: 140px;
+  }
+}
+.footer__btn {
+  transition: all 0.9s;
+  width: 90px;
+  height: 32px;
+  border-radius: 2px;
+  background-color: #f1ac11;
+  color: #2b2b2b;
+  font-family: "Myriad Pro - It";
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  margin-left: 23px;
+}
+.footer__btn:hover {
+  background-color: #000;
+}
+@media (max-width: 787px) {
+  .footer__btn {
+    width: 70px;
+  }
+}
