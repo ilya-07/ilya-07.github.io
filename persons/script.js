@@ -8,7 +8,6 @@ $(Document).ready(function(e){
         slidesToShow:3
     });
 
-
 function ibg(){
 
     $.each($('.ibg'), function(index, val) {
@@ -99,5 +98,14 @@ next.addEventListener('click', function(){
 });
 
 
+let a = document.querySelectorAll('.btn')[0],
+    c = document.querySelectorAll('.deacr')[0],
+    d = document.querySelectorAll('.v')[0];
+
+a.addEventListener('click', function (){
+    c.classList.add('n');
+    c.classList.remove('m');
+    d.classList.add('m');
+});
 
 });
