@@ -178,6 +178,7 @@ h6 {
         position: absolute;
         top: -700px;
         left: -200px;
+        transition: all 1s;
     }
 
     .h-menu__link {
@@ -190,6 +191,7 @@ h6 {
     }
 
     .h-menu__list.burger-active {
+        transition: all 1s;
         top: -55px;
         left: -20px;
         background-color: rgb(255, 255, 255);
