@@ -1672,3 +1672,10 @@ h6 {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 360px) {
+  .anket__input-btn {
+    width: 30px;
+    margin-left: 29px;
+    background-color: #000;
+    width: 59px
+  }
