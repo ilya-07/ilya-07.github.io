@@ -1925,5 +1925,8 @@ h6 {
     left: 167px;
     top: -15px;
   }
+  .red-awesome__input {
+  max-width: 200px;
+}
 }
 .webp .anket__input-btn::after{ background: url(../img/bot.webp) center/100% no-repeat; }
