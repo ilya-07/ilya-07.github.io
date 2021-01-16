@@ -1941,4 +1941,16 @@ h6 {
   }
 }
 
+@media (max-width: 290px) {
+  
+.anket__input-btn {
+  left: 168px;
+  top: -15px;
+}
+
+  }
+
+
+
+
 .webp .anket__input-btn::after{ background: url(../img/bot.webp) center/100% no-repeat; }
