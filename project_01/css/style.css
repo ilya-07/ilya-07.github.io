@@ -923,6 +923,9 @@ h6 {
   display: inline-block;
   cursor: pointer;
   position: relative;
+   -webkit-box-flex: 0;
+      -ms-flex: 0 0 40px;
+          flex: 0 0 40px;
 }
 
 .anket__input-btn_1:hover .anket__form_1 {
