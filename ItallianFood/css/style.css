@@ -305,6 +305,8 @@ h6 {
     border-radius: 15px;
     -webkit-animation: search 1s infinite;
     animation: search 1s infinite;
+    
+  cursor: pointer;
 }
 
 @-webkit-keyframes search {
