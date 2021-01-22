@@ -2501,6 +2501,7 @@ animation: search 1s infinite;
     .h-menu__link_search {
         margin-left: 20px;
     }
+    
 }
 @media(max-width: 786px) {
     .link {
@@ -2515,6 +2516,20 @@ animation: search 1s infinite;
     .header__search-img {
         position: absolute;
         top: 30%;
+    }
+    .h-menu__list.h-menu__list.burger-active{
+        height: 105vh;
+        top: -65px;
+    }
+    .header__menu{
+        z-index: 1000;
+        position: fixed;
+        background-color: #000;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .header__list{
+        display: none;
     }
 }
 @media(max-width: 381px){
@@ -2586,4 +2601,27 @@ animation: search 1s infinite;
 .header__search-img img {
    max-width: 100%;
    max-height: 100%;
+}
+
+@media(max-width: 560px){
+    .header__logo {
+        margin-top: 20px;
+    }
+    .header__menu{
+        margin-top: -20px;
+    }
+    .header{
+        padding-top: 15px;
+    }
+}
+.header__btn button:hover {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    box-shadow: 0 0 15px #fff;
+}
+.header__btn button {
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
 }
