@@ -2579,3 +2579,11 @@ animation: search 1s infinite;
     animation: none;
     -webkit-animation: none;
 }
+.header__search-img {
+    width: 30px;
+    height: 30px;
+}
+.header__search-img img {
+   max-width: 100%;
+   max-height: 100%;
+}
