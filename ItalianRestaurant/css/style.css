@@ -2527,6 +2527,7 @@ animation: search 1s infinite;
         background-color: #000;
         padding: 10px;
         border-radius: 10px;
+        cursor: pointer;
     }
     .header__list{
         display: none;
