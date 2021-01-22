@@ -2515,7 +2515,7 @@ animation: search 1s infinite;
     }
     .header__search-img {
         position: absolute;
-        top: 30%;
+        top: 16%;
     }
     .h-menu__list.h-menu__list.burger-active{
         height: 105vh;
