@@ -2575,3 +2575,7 @@ animation: search 1s infinite;
         transform: rotate(0deg);
     }
 }
+.rotate-stop{
+    animation: none;
+    -webkit-animation: none;
+}
