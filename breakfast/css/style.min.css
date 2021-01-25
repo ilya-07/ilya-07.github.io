@@ -1798,4 +1798,26 @@ h6 {
         margin-top: -20px
     }
 }
-.quality__orange{left:-12%}@media (max-width:1600px){.quality__orange{left:-20%}}@media (max-width:1400px){.quality__orange{left:-40%}}
+@media (max-width:1600px){
+    .quality__orange{
+        left:-20%
+    }
+    .quality__delicious-therd{
+        left:-1%
+    }
+}
+@media (max-width:1400px){
+    .quality__orange{
+        left:-40%
+    }
+    .quality__delicious-therd{
+        left:-12%;
+        bottom:90px
+    }
+}
+@media (max-width: 1200px) {
+    .quality__delicious-therd{
+        bottom: 180px;
+        left: -15%;
+    }
+}
