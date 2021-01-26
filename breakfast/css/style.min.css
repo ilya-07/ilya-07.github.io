@@ -330,7 +330,7 @@ h6 {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-     -ms-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
     flex-wrap: wrap;
 }
 
@@ -365,10 +365,6 @@ h6 {
     -webkit-animation: logo 1s infinite;
     animation: logo 1s infinite;
     list-style: none
-}
-
-.h-menu__logo_2 {
-    display: none
 }
 
 @-webkit-keyframes logo {
@@ -1290,7 +1286,10 @@ h6 {
     body.lock {
         overflow: hidden
     }
-
+    .h-menu__logo{
+        margin-left: 70%;
+        margin-top: -20px;
+    }
     .header__burger {
         display: block;
         position: relative;
@@ -1451,16 +1450,7 @@ h6 {
         font-size: 20px
     }
 
-    .h-menu__logo_1 {
-        display: none
-    }
-
-    .h-menu__logo_2 {
-        display: block;
-        position: relative;
-        left: 70%;
-        top: -20px
-    }
+    
 
     .h-menu__right {
         position: relative;
