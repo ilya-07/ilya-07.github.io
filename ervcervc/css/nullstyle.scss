@@ -1,0 +1,503 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+:focus,
+:active {
+	outline: none;
+}
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+	display: block;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button {
+	cursor: pointer;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: 400;
+}
+
+
+
+
+.row {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap
+}
+
+.container {
+	max-width: 975px;
+	margin: 0 auto;
+
+	@media (max-width: 1200px) {
+		padding: 0 10px;
+	}
+}
+
+@media (max-width: 768px) {
+
+	body.lock {
+		overflow: hidden;
+	}
+
+	.header__burger {
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		z-index: 201;
+
+		span {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: rgb(19, 17, 17);
+			top: 9px;
+			transition: all .3s;
+		}
+	}
+
+	.header__burger:before,
+	.header__burger:after {
+		content: '';
+		background-color: rgb(15, 10, 10);
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all .3s;
+	}
+
+	.header__burger:before {
+		top: 0;
+	}
+
+	.header__burger:after {
+		bottom: 0;
+	}
+
+	.h-menu__list {
+		flex-direction: column;
+		justify-content: flex-end;
+		//height: 100vh;
+		background-color: #767676;
+		height: 105vh;
+	}
+
+
+	.header__burger.burger-active {
+		span {
+			transform: scale(0);
+			background-color: #fff;
+		}
+	}
+
+	.header__burger.burger-active:before {
+		transform: rotate(45deg);
+		top: 9px;
+		background-color: #fff;
+	}
+
+	.header__burger.burger-active:after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+		background-color: #fff;
+	}
+
+	.h-menu {
+		position: relative;
+		
+	}
+
+	.h-menu__list {
+		position: absolute;
+		top: -7000px;
+		left: -90px;
+		padding: 50px 400px;
+		z-index: 100;
+		transition: all 1s;
+
+		@media(max-width: 500px) {
+			padding: 0px 250px;
+			left: -20px;
+		}
+
+		@media(max-width: 430px) {
+			left: -70px;
+		}
+
+		@media(max-width: 380px) {
+			padding: 40px 300px;
+			left: -180px;
+			top: -720px;
+		}
+
+		@media(max-width: 302px) {
+			padding: 40px 200px;
+			left: -120px;
+			top: -720px;
+		}
+	}
+
+	.h-menu__link {
+		margin-top: 7px;
+		//line-height: 40px;
+		font-size: 20px;
+		width: 200px;
+		margin-bottom: 15px;
+		a{
+			color: #fff;
+		}
+	}
+
+	.h-menu__list.burger-active {
+		top: -55px;
+		transition: all 1s;
+		height: 113vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+	}
+	
+	.slide.burger-active {
+		z-index: -5;
+	}
+
+	.slide__item.burger-active {
+		z-index: -5;
+		opacity: 0;
+		//transition: all 1s 3s;
+
+	}
+	.rating__group.burger-active {
+		z-index: -5;
+		opacity: 0;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+.slick-slider {}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+	margin-top: -20px;
+	width: 100%;
+	&__draggable {
+		//width: 1000px;
+		width: 100%;
+	}
+}
+
+.draggable {
+	//max-width: 1170px;
+}
+
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+	align-items: center;
+}
+
+/* Слайд */
+.slick-slide {
+	
+	// min-width: 357px;
+	 display: flex;
+	// flex-direction: column;
+	// flex: 0 1 33.333%;
+	// min-width: 0;
+}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {}
+
+/* Слайд основной */
+.slick-slide.slick-current {}
+
+/* Слайд по центру */
+.slick-slide.slick-center {}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned {}
+
+/* Стрелка */
+.slick-arrow {
+	font-size: 0;
+	
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+	
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+	
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {}
+
+/* Точки (булиты) */
+.slick-dots {}
+
+.slick-dots li {}
+
+/* Активная точка */
+.slick-dots li.slick-active {}
+
+/* Элемент точки */
+.slick-dots li button {}
+
+
+
+
+
+
+
+// .rating { рейтинг
+// 	margin: 0 0 1em 0;
+// 	padding: 0;
+// 	border: none;
+// }
+
+// /* Caption */
+
+// .rating__caption {
+// 	margin-bottom: 0.5em;
+// 	padding: 0;
+// }
+
+// /* Group */
+
+// .rating__group {
+// 	position: relative;
+// 	width: 10em;
+// 	height: 2em;
+// 	background-image: url('./img/off.svg');
+// 	background-size: 2em auto;
+// 	background-repeat: repeat-x;
+// }
+
+
+// .rating__star {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	margin: 0;
+// 	height: 2em;
+// 	font-size: inherit;
+// 	-webkit-appearance: none;
+// 	-moz-appearance: none;
+// 	appearance: none;
+// 	background-size: 2em auto;
+// 	background-repeat: repeat-x;
+// }
+
+// .rating__star:focus { 
+// 	outline: none;
+// }
+
+// .rating__star:hover,
+// .rating__star:checked {
+// 	background-image: url('./img/on.svg');
+// }
+
+// .rating__star:hover~.rating__star {
+// 	background-image: url('./img/off.svg');
+// }
+
+// /* Options */
+
+// .rating__star:nth-of-type(1) {
+// 	z-index: 5;
+// 	width: 2em;
+// }
+
+// .rating__star:nth-of-type(2) {
+// 	z-index: 4;
+// 	width: 4em;
+// }
+
+// .rating__star:nth-of-type(3) {
+// 	z-index: 3;
+// 	width: 6em;
+// }
+
+// .rating__star:nth-of-type(4) {
+// 	z-index: 2;
+// 	width: 8em;
+// }
+
+// .rating__star:nth-of-type(5) {
+// 	z-index: 1;
+// 	width: 10em;
+// }
+// <div class="rating">
+//     <div class="rating__group">
+//         <input class="rating__star" type="radio" name="slideTwo" value="1" >
+//         <input class="rating__star" type="radio" name="slideTwo" value="2" >
+//         <input class="rating__star" type="radio" name="slideTwo" value="3"  checked>
+//         <input class="rating__star" type="radio" name="slideTwo" value="4" >
+//         <input class="rating__star" type="radio" name="slideTwo" value="5" >
+//     </div>
+// </div> Рейтинг
+
+
+
+
+
+// <div class="header__title type-js headline"> эффектный текст
+//     <h1 class="text-js">Making time a good time by making food the good food.</h1>
+// </div>
+
+// .headline { эффектный текс
+// 	// margin: 20px;
+// 	font-family: Philosopher;
+// 	font-style: normal;
+// 	font-weight: bold;
+// 	@include ad-font(48.83, 20);
+// 	@include height(160, 50);
+// 	//text-align: center;
+// 	z-index: -1;
+
+// 	h1 {
+// 		letter-spacing: 1.6px;
+// 		font-weight: 300;
+// 		width: 100%;
+// 	}
+// }
+
+// .credit {
+// 	position: fixed;
+// 	bottom: 20px;
+// 	left: 50%;
+// 	transform: translateX(-50%);
+// 	//color: white;
+// 	//text-decoration: none;
+// }
+
+// .text-js {
+// 	opacity: 0;
+// }
+
+// .cursor {
+// 	display: block;
+// 	position: absolute;
+// 	height: 100%;
+// 	top: 0;
+// 	right: -5px;
+// 	width: 2px;
+// 	/* Change colour of Cursor Here */
+// 	background-color: rgba(1, 1, 1, 0);
+// 	z-index: -11;
+// 	opacity: 0;
+// 	animation: flash 0.1s none infinite alternate;
+// }
+
+// @keyframes flash {
+// 	0% {
+// 		opacity: 1;
+// 	}
+
+// 	100% {
+// 		opacity: 0;
+// 	}
+// } Эффектный текст
