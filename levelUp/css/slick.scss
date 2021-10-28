@@ -1,0 +1,148 @@
+.slick-slider {}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочка */
+.slick-list {
+    overflow: hidden;
+
+    &__draggable {
+        width: 1000px;
+    }
+}
+
+.draggable {
+    // max-width: 1170px;
+}
+
+/* Лента слайдов */
+.slick-track {
+    display: flex;
+    align-items: center;
+}
+
+/* Слайд */
+.slick-slide {
+    margin: 0 20px;
+    min-width: 357px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 33.333%;
+    min-width: 0;
+}
+.slider{
+    position: relative;
+}
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {}
+
+/* Слайд основной */
+.slick-slide.slick-current {}
+
+/* Слайд по центру */
+.slick-slide.slick-center {}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned {}
+
+/* Стрелка */
+.slick-arrow {
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {}
+
+/* Точки (булиты) */
+.slick-dots {
+}
+
+.slick-dots li {
+}
+
+/* Активная точка */
+.slick-dots li.slick-active {
+}
+
+/* Элемент точки */
+.slick-dots li button {
+    font-size: 0;
+}
+
+.slick-arrow.slick-next {
+    // display: none;
+}
+.slick-arrow {
+    width: 44px;
+    height: 44px;
+    background: transparent;
+    border: solid 5px #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+    font-size: 0;
+    position: relative;
+
+    // @media (max-width:576px) {
+    //     display: none;
+    //     width: 0;
+    //     height: 0;
+    // }
+
+    &::before {
+        position: absolute;
+        content: '';
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        width: 20px;
+        height: 20px;
+
+    }
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+    left: 0;
+    top: 30%;
+    bottom: 0;
+    position: absolute;
+    z-index: 5;
+
+
+
+    &::before {
+        background: url('../img/pr.svg');
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+    }
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+    right: 0;
+    top: 30%;
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+
+
+    &::before {
+        background: url('../img/ne.svg');
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: center;
+    }
+}
