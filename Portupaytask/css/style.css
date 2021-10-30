@@ -1455,3 +1455,9 @@ h6 {
         margin-bottom: 10px;
     }
 }
+.title.h2{
+    font-weight: 700;
+}
+.footer__title.h2{
+    font-weight: 700;
+}
