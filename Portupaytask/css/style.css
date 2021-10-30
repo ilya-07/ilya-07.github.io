@@ -85,6 +85,10 @@ h6 {
     font-size: inherit;
     font-weight: 400;
 }
+h2 {
+    font-size: inherit;
+    font-weight: 700;
+}
 
 .row {
     display: -webkit-box;
@@ -1454,10 +1458,4 @@ h6 {
         margin: 0 auto;
         margin-bottom: 10px;
     }
-}
-.title.h2{
-    font-weight: 700;
-}
-.footer__title.h2{
-    font-weight: 700;
 }
