@@ -1,0 +1,779 @@
+@import 'nullstyle';
+@import 'fonts';
+.main{
+   overflow: hidden;
+}
+.header {
+   width: 100%;
+   background: #F3EEE8;
+   max-height: 100vh;
+   .row{
+      align-items: start;
+   }
+
+   &__container {
+      flex: 0 0 50%;
+      width: 50%;
+      padding-left: 150px;
+   }
+
+   &__top {
+      padding: 65px 0px 0px 0px;
+      margin-bottom: 95px;
+   }
+
+   &__menu {
+      width: 470px;
+   }
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+   }
+
+   &__link {
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: #706458;
+      transition: all 1s;
+      display: inline-block;
+      &_active{
+         font-family: 'Merriweather';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 34px;
+         line-height: 25px;
+         letter-spacing: 2px;
+         color: #A06056;
+      }
+      &:hover{
+         color: #A06056;
+         transform: scale(1.5);
+      }
+   }
+
+   &__subtitle {
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      margin-bottom: 50px;
+      letter-spacing: 1px;
+      color: #A06056;
+   }
+
+   &__title {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 70px;
+      margin-bottom: 30px;
+      letter-spacing: -0.4px;
+      color: #A06056;
+      max-width: 420px;
+      
+      animation: title 0.5s linear  0s forwards;
+      @keyframes title {
+         0%{
+            transform: scale(0);
+            opacity: 0;
+            position: relative;
+         }
+         100%{
+            transform: scale(1);
+            opacity: 1;
+         }
+      }
+   }
+
+   &__text {
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 31px;
+      max-width: 420px;
+      color: rgba(112, 100, 88, 0.9);
+   }
+
+   &__btn {
+      margin-bottom: 65px;
+   }
+
+   &__lump {
+      flex: 0 0 50%;
+      max-width: 50%;
+      position: relative;
+      bottom: -100vh;
+      right: 0;
+      opacity: 0;
+      animation: top 2s linear  0s forwards;
+      @keyframes top {
+         0%{
+
+         }
+         100%{
+            bottom: 0;
+            opacity: 1;
+            right: 0;
+         }
+      }
+      img{
+         width: 100%;
+         height: 100vh;
+      }
+   }
+}
+.main{
+   background: #F3EEE8;
+
+}
+.find {
+   padding-top: 65px;
+   margin-bottom: 150px;
+   &__title {
+      margin-bottom: 48px;
+   }
+
+   &__body {
+      margin-bottom: 48px;
+      .row{
+         align-items: start;
+      }
+   }
+   &__year{
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: rgba(112, 100, 88, 0.9);
+      opacity: 0.5;}
+
+   &__text {
+      max-width: 165px;
+   }
+
+   &__item{
+      width: 240px;
+   }
+   &__info {
+      width: 980px;
+   }
+
+   &__column {
+   }
+
+
+   &__image {
+      position: relative;
+      width: 261.25px;
+      height: 350px;
+   }
+
+   &__img {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      transition: all 1s;
+      border: 5px solid transparent;
+      img{
+         width: 100%;
+         height: 100%;
+         transition: all 1s;
+      }
+   }
+
+   &__subtitle {
+      position: absolute;
+      top: 50%;
+      left: 90%;
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 55px;
+      text-align: center;
+      line-height: 60px;
+      letter-spacing: -0.6px;
+      color: #A06056;
+      // position: relative;
+      opacity: 0;
+      // left: -200px;
+      transition: all 1s;
+      &._active{
+         opacity: 1;
+         left: 50%;
+      }
+   }
+   
+   &__subtext {
+      transition: all 1s;
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: rgba(112, 100, 88, 0.9);
+      margin-left: 32px;
+   }
+   &__item {
+      transition: all 2s;
+      &:hover{
+         .find__subtext{
+            transform: translateY(15px) ;
+            color: #000;
+         }
+         .find__img{
+            border: 5px solid #fff;
+            box-shadow: 1px 1px 20px rgb(205, 151, 151);
+            img{
+               transform: scale(1.2) rotate(-5deg);
+            }
+         }
+      }
+   }
+
+}
+.container {
+}
+.title {
+   font-family: 'Merriweather';
+   font-style: normal;
+   font-weight: 300;
+   font-size: 40px;
+   line-height: 60px;
+   letter-spacing: -0.6px;
+   color: #706458;
+   position: relative;
+   bottom: -200px;
+   transition: all 0.5s;
+   opacity: 0;
+   &._active{
+      bottom: 0;
+      opacity: 1;
+   }
+}
+.text {
+   font-family: 'Varta';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 25px;
+   color: rgba(112, 100, 88, 0.9);
+}
+.description {
+   padding-bottom: 70px;
+
+   &__row {
+      align-items: start;
+   }
+
+   &__introduce {
+   }
+
+   &__title {
+      max-width: 458px;
+      margin-bottom: 30px;
+   }
+
+   &__link {
+   }
+
+   &__info {
+      flex: 0 0 50%;
+      .row{
+         align-items: start;
+         row-gap: 30px;
+      }
+   }
+
+   &__block {
+      flex: 0 0 50%;
+   }
+
+   &__item {
+      max-width: 259px;
+   
+   }
+
+   &__subtitle {
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      letter-spacing: -0.2px;
+      color: #A06056;
+      max-width: 259px;
+      margin-bottom: 12px;
+   }
+
+   &__text {
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: rgba(112, 100, 88, 0.9);
+      max-width: 259px;
+      position: relative;
+      transition: all 2s;
+      &_1{
+         left: -150px;
+         &._active{
+            left: 0;
+         }
+      }
+      &_2{
+         right: -150px;
+         &._active{
+            right: 0;
+         }
+      }
+      &_3{
+         left: -150px;
+         &._active{
+            left: 0;
+         }
+      }
+      &_4{
+         right: -150px;
+         &._active{
+            right: 0;
+         }
+      }
+
+   
+   }
+}
+.container {
+}
+.row {
+}
+.sliders {
+   margin-bottom: 70px;
+   padding-top: 70px;
+   max-width: 100vw;
+   overflow: hidden;
+   background-color: #fff;
+
+   &__top {
+      margin-bottom: 50px;
+   }
+
+   &__top-block {
+   }
+
+   &__title {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 30px;
+      line-height: 40px;
+      margin-bottom: 15px;
+      letter-spacing: -0.3px;
+      color: #121212;
+   }
+
+   &__text {
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 10px;
+      color: rgba(112, 100, 88, 0.9);
+   }
+
+   &__link {
+   }
+
+   &__mail {
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: rgba(112, 100, 88, 0.9);
+      
+   }
+
+   &__btn {
+      font-family: 'Karla';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 17px;
+      line-height: 25px;
+      padding: 12px 29px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      letter-spacing: 0.3px;
+      background: #534B42;
+      border-radius: 1px;
+      color: #FFFFFF;
+      transition: all 1s;
+      width: 143px;
+      &:hover{
+         border-radius: 10px;
+         background-color: #000;
+         box-shadow: 1px 1px 30px #534B42;
+      }
+   }
+
+   &__body {
+      margin: 0 -20px;
+      margin-bottom: 40px;
+      .row{
+         flex-wrap: nowrap;
+      }
+   }
+
+   &__item {
+      padding: 0 20px;
+      min-width: 506px;
+      height: 550px;
+      img{
+         width: 100%;
+         height: 100%;
+      }
+   }
+
+   &__arrows {
+   }
+
+   &__bottom {
+      .row{
+         justify-content: start;
+         align-items: start;
+      }
+   }
+
+   &__undertitle {font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 45px;
+      line-height: 40px;
+      letter-spacing: -0.3px;
+      color: #534B42;
+      
+   }
+
+   &__article {
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      max-width: 360px;
+      margin-left: 130px;
+      color: #706458;
+      position: relative;
+      right: -500px;
+      transition: all 2s;
+      &._active{
+         right: 0;
+      }
+   }
+}
+.container {
+}
+.row {
+}
+.footer {
+   background: #F3EEE8;
+   padding: 70px 0;
+
+   &__info {
+      .row{
+         align-items: start;
+      }
+   }
+
+   &__title {
+      font-family: 'Merriweather';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 34px;
+      line-height: 25px;
+      letter-spacing: 2px;
+      color: #534B42;
+   }
+
+   &__item {
+   }
+
+   &__subtitle {
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 22px;
+      letter-spacing: -0.2px;
+      color: #534B42;
+   }
+
+   &__list {
+   }
+
+   &__link {
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      margin-bottom: 12px;
+      color: #706458;
+   }
+
+   &__block {
+   }
+
+   &__img {
+      width: 242.09px;
+      height: 182px;
+      margin-bottom: 10px;
+      img{
+         width: 100%;
+         height: 100%;
+      }
+   }
+
+   &__text {
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 25px;
+      max-width: 235px;
+      color: #706458;
+      margin-bottom: 15px;
+   }
+
+   &__icons {
+      width: 200px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+   }
+
+   &__icon {
+   }
+
+   &__bottom {
+   }
+
+   &__year {
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      color: rgba(112, 100, 88, 0.7);
+   }
+
+   &__about {
+   }
+
+   &__additional {
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+      margin-left: 30px;
+      color: rgba(112, 100, 88, 0.7);
+   }
+}
+.container {
+}
+.row {
+}
+.link {
+   font-family: 'Karla';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 17px;
+   line-height: 25px;
+   letter-spacing: 0.3px;
+   color: #A06056;
+   position: relative;
+   display: inline-block;
+   background-color: transparent;
+   &::after{
+      position: absolute;
+      content: '';
+      background: url('../img/arr.svg') center/cover no-repeat;
+      width: 20px;
+      height: 23px;
+      right: -25px;
+      top: 50%;
+      transform: translateY(-50%);
+   }
+}
+
+
+
+
+.new {
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 500px;
+   height: 400px;
+   display: none;
+   z-index: 5;
+   // display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   padding: 50px;
+   border-radius: 20px;
+   border: 10px solid #F3EEE8;
+   &__hide{
+      top: -20px;
+      right: -20px;
+   }
+   &__text {
+      max-width: 100%;
+      text-align: center;
+      font-family: 'Varta';
+      font-style: normal;
+      font-weight: 300;
+      font-size: 22px;
+      line-height: 31px;
+      max-width: 420px;
+      color: rgba(87, 75, 63, 0.9);
+   }
+}
+.hide{
+   cursor: pointer;
+   width: 70px;
+   height: 70px;
+   background-color: red;
+   border: 2px solid #000;
+   border-radius: 50%;
+   position: absolute;
+   &::after{
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      content: '';
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%) rotate(45deg);
+      background-color: #000;
+   }
+   &::before{
+      position: absolute;
+      width: 50px;
+      height: 2px;
+      content: '';
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%) rotate(-45deg);
+      background-color: #000;
+   }
+}
+.show{
+   display: flex;
+}
+.remowe{
+   display: none;
+}
+
+
+
+
+
+
+.slick-slider {}
+
+/* Слайдер запущен */
+.slick-slider.slick-initialized {}
+
+/* Слайдер с точками */
+.slick-slider.slick-dotted {}
+
+/* Ограничивающая оболочка */
+.slick-list {
+	overflow: hidden;
+
+	&__draggable {
+		width: 1100px;
+	}
+}
+
+.draggable {
+	// max-width: 1170px;
+   position: relative;
+   right: -150px;
+}
+
+/* Лента слайдов */
+.slick-track {
+	display: flex;
+	align-items: center;
+}
+
+/* Слайд */
+.slick-slide {
+	margin: 0 20px;
+   max-width: 300px;
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 33.333%;
+	// min-width: 0;
+}
+
+/* Слайд активный (показывается) */
+.slick-slide.slick-active {}
+
+/* Слайд основной */
+.slick-slide.slick-current {}
+
+/* Слайд по центру */
+.slick-slide.slick-center {}
+
+/* Клонированный слайд */
+.slick-slide.slick-cloned {}
+
+/* Стрелка */
+.slick-arrow {
+	display: none;
+	font-size: 0;
+}
+
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+	display: none;
+}
+
+/* Стрелка вправо */
+.slick-arrow.slick-next {}
+
+/* Стрелка не активная */
+.slick-arrow.slick-disabled {}
+
+/* Точки (булиты) */
+.slick-dots {}
+
+.slick-dots li {}
+
+/* Активная точка */
+.slick-dots li.slick-active {}
+
+/* Элемент точки */
+.slick-dots li button {}
+
+.slick-arrow.slick-next {
+	display: none;
+}
