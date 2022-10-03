@@ -5,7 +5,7 @@ burger.addEventListener('click', () => {
    burger.classList.toggle('active');
    menu.classList.toggle('active');
 });
-var swiper = new Swiper(".slide-content", {
+let swiper = new Swiper(".slide-content", {
    slidesPerView: 4,
    spaceBetween: 25,
    loop: true,
