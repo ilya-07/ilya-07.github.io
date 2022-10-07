@@ -18,3 +18,16 @@ let thitdObj = {
    }
 }
 thitdObj.func('getText');
+
+let person = {
+   name: 'Denis',
+   age: 23
+}
+
+function changePerson({ ...getPerson }) {
+   getPerson.age = 18;
+   return getPerson;
+}
+
+let changeccPerson = changePerson(person);
+console.log(person.age, changeccPerson.age)
