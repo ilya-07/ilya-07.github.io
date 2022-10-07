@@ -9,3 +9,12 @@ const secondObj = { ...firstObj }
 secondObj.name = 55
 
 console.log(firstObj.name, secondObj.name);
+let thitdObj = {
+   func: function (a) {
+      block.addEventListene('click', () => {
+         block.style.color = 'red';
+         block.innerHTML = a;
+      })
+   }
+}
+thitdObj.func('getText');
