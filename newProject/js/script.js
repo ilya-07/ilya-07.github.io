@@ -1,10 +1,6 @@
 'use strict'
 
-let obj = {
-   name: 'ilya',
-   title: 'document',
-   age: 13
-}
-let newObj = { ...obj };
-delete newObj.age
-console.table(newObj)
+const dev = document.querySelector('.develop__column_first');
+const center = document.querySelector('.develop__center');
+const getHight = dev.clientHeight;
+center.style.height = getHight + 'px'

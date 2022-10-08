@@ -256,6 +256,7 @@ main {
 
 .technlogy {
   background: #1a1a1a;
+  margin-bottom: 200px;
 }
 .technlogy__title {
   margin-bottom: 80px;
@@ -426,4 +427,79 @@ main {
   line-height: 94px;
   letter-spacing: 1px;
   color: #ffffff;
+}
+
+.develop {
+  margin-bottom: 150px;
+}
+.develop__title {
+  margin-bottom: 90px;
+}
+.develop__column {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 60px;
+}
+.develop__img {
+  width: 160px;
+  height: 180px;
+}
+.develop__img img {
+  width: 100%;
+  height: 100%;
+}
+.develop__subtitle {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 200%;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+.develop__text {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  max-width: 316px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+.develop__center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 140px;
+  text-align: center;
+  position: relative;
+}
+.develop__center::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  left: 0;
+  top: 0;
+}
+.develop__center::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.1);
+  right: 0;
+  top: 0;
+}
+.develop__arr {
+  width: 82px;
+  height: 82px;
+  margin: 0 auto;
+}
+.develop__arr img {
+  width: 100%;
+  height: 100%;
 }
