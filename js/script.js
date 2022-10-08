@@ -24,7 +24,7 @@ let person = {
    name: 'Denis',
    age: 23
 }
-
+let b = 5;
 function changePerson({ ...getPerson }) {
    getPerson.age = 18;
    return getPerson;
