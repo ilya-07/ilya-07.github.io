@@ -1,2 +1,185 @@
 @import "nullstyle.scss";
 @import "fonts.scss";
+
+$wd: 373px;
+.header {
+   background: #1a1a1a;
+   position: relative;
+   width: 100vw;
+   height: 100vh;
+   overflow-x: hidden;
+   padding-top: 48px;
+   &__top {
+      margin-bottom: 40px;
+   }
+
+   &__logo {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+
+      background: linear-gradient(307.72deg, #a7f306 2.04%, #f3cd06 98.59%), #ffffff;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+   }
+
+   &__menu {
+      width: 695px;
+   }
+
+   &__link {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      color: #ffffff;
+      opacity: 0.5;
+   }
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__registration {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #ffffff;
+   }
+
+   &__title {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 60px;
+      line-height: 141px;
+      text-align: center;
+      letter-spacing: 1px;
+      background: linear-gradient(90.01deg, #ffffff 0.01%, rgba(255, 255, 255, 0.3) 49.48%, #ffffff 99.99%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      margin-bottom: 50px;
+      span {
+         // background: linear-gradient(90.01deg, #f3cd06 0.01%, rgba(255, 255, 255, 0.3) 49.48%, #ffffff 99.99%);
+         color: #f3cd06;
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: #f3cd06;
+         background-clip: text;
+         text-fill-color: #f3cd06;
+      }
+   }
+
+   &__info {
+      .row {
+         align-items: start;
+      }
+   }
+
+   &__company {
+      .row {
+         column-gap: 20px;
+      }
+   }
+
+   &__item {
+      padding: 30px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+      // opacity: 0.2;
+      border-radius: 32px;
+   }
+
+   &__num {
+      font-family: "Plus Jakarta Display";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 40px;
+      line-height: 52px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      opacity: 1;
+      color: #ffffff;
+   }
+
+   &__who {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 200%;
+      color: #ffffff;
+      opacity: 0.5;
+   }
+
+   &__about {
+      max-width: $wd;
+      display: flex;
+      flex-direction: column;
+   }
+
+   &__text {
+      max-width: $wd;
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 200%;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      opacity: 0.5;
+      margin-bottom: 30px;
+   }
+
+   &__btn {
+      display: block;
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 25px;
+      text-align: center;
+      border-radius: 120px;
+      &_white {
+         align-self: flex-start;
+         background: #ffffff;
+         color: #1a1a1a;
+         padding: 23px 35px;
+         margin-bottom: 20px;
+      }
+
+      &_black {
+         align-self: flex-end;
+         color: #ffffff;
+         padding: 23px 28px;
+         border: 1px solid rgb(255, 255, 255, 0.2);
+         background-color: transparent;
+      }
+   }
+
+   &__hand {
+      position: absolute;
+      width: 1300px;
+      height: 644px;
+      bottom: -60px;
+      left: 0;
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+.container {
+}
+.row {
+}
+.list {
+}
