@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Poppins:wght@500&family=Raleway:wght@400;600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -83,7 +84,162 @@ img {
 }
 
 .container {
-  max-width: 1210px;
+  max-width: 1350px;
   padding: 0 20px;
   margin: 0 auto;
+}
+
+.header {
+  background: #1a1a1a;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  padding-top: 48px;
+}
+.header__top {
+  margin-bottom: 40px;
+}
+.header__logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  background: linear-gradient(307.72deg, #a7f306 2.04%, #f3cd06 98.59%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.header__menu {
+  width: 695px;
+}
+.header__link {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.header__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__registration {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ffffff;
+}
+.header__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 141px;
+  text-align: center;
+  letter-spacing: 1px;
+  background: linear-gradient(90.01deg, #ffffff 0.01%, rgba(255, 255, 255, 0.3) 49.48%, #ffffff 99.99%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 50px;
+}
+.header__title span {
+  color: #f3cd06;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #f3cd06;
+  background-clip: text;
+  text-fill-color: #f3cd06;
+}
+.header__info .row {
+  align-items: start;
+}
+.header__company .row {
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+.header__item {
+  padding: 30px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 32px;
+}
+.header__num {
+  font-family: "Plus Jakarta Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  opacity: 1;
+  color: #ffffff;
+}
+.header__who {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 200%;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.header__about {
+  max-width: 373px;
+  display: flex;
+  flex-direction: column;
+}
+.header__text {
+  max-width: 373px;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-bottom: 30px;
+}
+.header__btn {
+  display: block;
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 120px;
+}
+.header__btn_white {
+  align-self: flex-start;
+  background: #ffffff;
+  color: #1a1a1a;
+  padding: 23px 35px;
+  margin-bottom: 20px;
+}
+.header__btn_black {
+  align-self: flex-end;
+  color: #ffffff;
+  padding: 23px 28px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+}
+.header__hand {
+  position: absolute;
+  width: 1300px;
+  height: 644px;
+  bottom: -60px;
+  left: 0;
+}
+.header__hand img {
+  width: 100%;
+  height: 100%;
 }
