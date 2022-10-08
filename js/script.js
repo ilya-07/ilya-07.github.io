@@ -1,3 +1,4 @@
+'use strict'
 const block = document.querySelector('.blick')
 block.innerHTML = '12345';
 const firstObj = {
