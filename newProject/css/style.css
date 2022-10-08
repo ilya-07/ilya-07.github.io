@@ -89,13 +89,19 @@ img {
   margin: 0 auto;
 }
 
-.header {
+body {
   background: #1a1a1a;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.header {
   position: relative;
   width: 100vw;
   height: 100vh;
   overflow-x: hidden;
   padding-top: 48px;
+  margin-bottom: 200px;
 }
 .header__top {
   margin-bottom: 40px;
@@ -242,4 +248,179 @@ img {
 .header__hand img {
   width: 100%;
   height: 100%;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+.technlogy {
+  background: #1a1a1a;
+}
+.technlogy__title {
+  margin-bottom: 80px;
+  position: relative;
+}
+.technlogy__title::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background: url("../img/right-top-arr.svg") center/cover no-repeat;
+  width: 125px;
+  height: 125px;
+}
+.technlogy__menu {
+  width: 1300px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.technlogy__menu::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  background: #d9d9d9;
+}
+.technlogy__menu .row {
+  justify-content: space-around;
+}
+.technlogy__link {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 112px;
+  opacity: 0.5;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+.technlogy__link.active-tab {
+  opacity: 1;
+}
+.technlogy__link.active-tab::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: 190%;
+  left: 50%;
+  bottom: 0;
+  background: #f3cd06;
+  z-index: 5;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.technlogy__item {
+  display: none;
+}
+.technlogy__item.active-tab {
+  display: block;
+}
+.technlogy__title-second {
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.technlogy__text {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  max-width: 586px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  opacity: 0.5;
+  margin-bottom: 36px;
+}
+.technlogy__list {
+  margin-bottom: 48px;
+}
+.technlogy__subtitle {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+.technlogy__subtitle:last-child {
+  margin-bottom: 0;
+}
+.technlogy__subtitle-img {
+  margin-right: 16px;
+  width: 32px;
+  height: 32px;
+  padding: 5px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.technlogy__btn {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.2039215686);
+  border-radius: 120px;
+  -webkit-border-radius: 120px;
+  -moz-border-radius: 120px;
+  -ms-border-radius: 120px;
+  -o-border-radius: 120px;
+  padding: 24px 88px 23px 32px;
+  background-color: transparent;
+  position: relative;
+}
+.technlogy__btn::after {
+  position: absolute;
+  content: "";
+  background: url("../img/tab-btn.svg") center/cover no-repeat;
+  right: 29px;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.technlogy__img {
+  width: 600px;
+  height: 600px;
+}
+.technlogy__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 94px;
+  letter-spacing: 1px;
+  color: #ffffff;
 }
