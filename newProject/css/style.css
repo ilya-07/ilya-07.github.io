@@ -332,6 +332,9 @@ main {
   margin-bottom: 30px;
   text-transform: uppercase;
 }
+.technlogy__title-second span {
+  color: #f3cd06;
+}
 .technlogy__text {
   font-family: "Plus Jakarta Sans";
   font-style: normal;

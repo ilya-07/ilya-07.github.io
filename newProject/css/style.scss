@@ -275,6 +275,9 @@ main {
    &__title-second {
       margin-bottom: 30px;
       text-transform: uppercase;
+      span {
+         color: #f3cd06;
+      }
    }
 
    &__text {
