@@ -649,13 +649,13 @@ main {
    &__top {
       margin: 0 auto;
       margin-bottom: 80px;
-      width: 1400px;
-      padding: 0 150px;
+      width: 1050px;
+      // padding: 0 150px;
       .brand__item {
       }
       .row {
-         column-gap: 10px;
-         justify-content: space-around;
+         // column-gap: 10px;
+         // justify-content: space-around;
       }
    }
 
@@ -669,6 +669,10 @@ main {
       align-items: center;
       width: 240px;
       height: 100px;
+      img {
+         // width: 160px;
+         // height: 40px;
+      }
    }
 
    &__bottom {
@@ -679,4 +683,107 @@ main {
          column-gap: 10px;
       }
    }
+}
+.footer {
+   padding-bottom: 70px;
+   &__info {
+   }
+
+   &__logo {
+      margin-bottom: 28px;
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      background: linear-gradient(307.72deg, #a7f306 2.04%, #f3cd06 98.59%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      span {
+         background: transparent;
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: white;
+         background-clip: text;
+         text-fill-color: white;
+      }
+   }
+
+   &__text {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 200%;
+      max-width: 329px;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      opacity: 0.5;
+   }
+
+   &__body {
+      position: relative;
+      &::after {
+         position: absolute;
+         content: "";
+         height: 1px;
+         width: 100%;
+         background-color: rgb(255, 255, 255, 0.2);
+         left: 0;
+         top: 50%;
+         transform: translateY(-50%);
+         -webkit-transform: translateY(-50%);
+         -moz-transform: translateY(-50%);
+         -ms-transform: translateY(-50%);
+         -o-transform: translateY(-50%);
+      }
+   }
+
+   &__top {
+      margin-bottom: 120px;
+   }
+
+   &__menu {
+   }
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__link {
+      font-family: "Raleway";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: right;
+      color: #ffffff;
+   }
+
+   &__bottom {
+   }
+
+   &__grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      column-gap: 60px;
+   }
+
+   &__item {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      opacity: 0.6;
+   }
+}
+.container {
+}
+.row {
 }

@@ -649,13 +649,7 @@ main {
 .brand__top {
   margin: 0 auto;
   margin-bottom: 80px;
-  width: 1400px;
-  padding: 0 150px;
-}
-.brand__top .row {
-  -moz-column-gap: 10px;
-       column-gap: 10px;
-  justify-content: space-around;
+  width: 1050px;
 }
 .brand__item {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
@@ -674,4 +668,89 @@ main {
 .brand__bottom .row {
   -moz-column-gap: 10px;
        column-gap: 10px;
+}
+
+.footer {
+  padding-bottom: 70px;
+}
+.footer__logo {
+  margin-bottom: 28px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  background: linear-gradient(307.72deg, #a7f306 2.04%, #f3cd06 98.59%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.footer__logo span {
+  background: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: white;
+  background-clip: text;
+  text-fill-color: white;
+}
+.footer__text {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 200%;
+  max-width: 329px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.footer__body {
+  position: relative;
+}
+.footer__body::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.footer__top {
+  margin-bottom: 120px;
+}
+.footer__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__link {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: right;
+  color: #ffffff;
+}
+.footer__grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+.footer__item {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+  opacity: 0.6;
 }
