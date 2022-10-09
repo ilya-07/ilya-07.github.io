@@ -13,7 +13,7 @@ $wd: 373px;
    height: 100vh;
    overflow-x: hidden;
    padding-top: 48px;
-   margin-bottom: 200px;
+   margin-bottom: 100px;
    &__top {
       margin-bottom: 40px;
    }
@@ -568,9 +568,115 @@ main {
 }
 .right {
 }
+.man {
+   margin-bottom: 100px;
+   &__title {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 60px;
+   }
+
+   &__text {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 48px;
+      line-height: 200%;
+      color: rgb(255, 255, 255, 0.5);
+      max-width: 1200px;
+      margin: 0 auto;
+      margin-bottom: 100px;
+      span {
+         color: #fff;
+      }
+   }
+
+   &__info {
+      width: 695px;
+      margin: 0 auto;
+      position: relative;
+      &::after {
+         position: absolute;
+         content: "";
+         left: 48%;
+         top: 50%;
+         transform: translate(-50%);
+         -webkit-transform: translate(-50%);
+         -moz-transform: translate(-50%);
+         -ms-transform: translate(-50%);
+         -o-transform: translate(-50%);
+         width: 64px;
+         height: 2px;
+         background-color: #fff;
+      }
+   }
+
+   &__item {
+      font-family: "Plus Jakarta Sans";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 200%;
+      letter-spacing: -0.03em;
+      color: #ffffff;
+      &_yellow {
+         font-size: 32px;
+         background: linear-gradient(307.72deg, #a7f306 2.04%, #f3cd06 98.59%), #ffffff;
+         -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+         background-clip: text;
+         text-fill-color: transparent;
+      }
+   }
+}
 .container {
 }
 .title {
 }
 .row {
+}
+.brand {
+   margin-bottom: 150px;
+   &__title {
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 60px;
+   }
+
+   &__body {
+   }
+
+   &__top {
+      margin: 0 auto;
+      margin-bottom: 80px;
+      width: 1400px;
+      padding: 0 150px;
+      .brand__item {
+      }
+      .row {
+         column-gap: 10px;
+         justify-content: space-around;
+      }
+   }
+
+   &__item {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+      opacity: 0.7;
+      border-radius: 32px;
+      display: inline-block;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 240px;
+      height: 100px;
+   }
+
+   &__bottom {
+      width: 100%;
+      .brand__item {
+      }
+      .row {
+         column-gap: 10px;
+      }
+   }
 }

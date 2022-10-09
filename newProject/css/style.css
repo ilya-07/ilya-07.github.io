@@ -101,7 +101,7 @@ body {
   height: 100vh;
   overflow-x: hidden;
   padding-top: 48px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 .header__top {
   margin-bottom: 40px;
@@ -577,4 +577,101 @@ main {
 }
 .support__right:hover {
   background-color: rgb(0, 0, 0);
+}
+
+.man {
+  margin-bottom: 100px;
+}
+.man__title {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.man__text {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 200%;
+  color: rgba(255, 255, 255, 0.5);
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.man__text span {
+  color: #fff;
+}
+.man__info {
+  width: 695px;
+  margin: 0 auto;
+  position: relative;
+}
+.man__info::after {
+  position: absolute;
+  content: "";
+  left: 48%;
+  top: 50%;
+  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  width: 64px;
+  height: 2px;
+  background-color: #fff;
+}
+.man__item {
+  font-family: "Plus Jakarta Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 200%;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+.man__item_yellow {
+  font-size: 32px;
+  background: linear-gradient(307.72deg, #a7f306 2.04%, #f3cd06 98.59%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.brand {
+  margin-bottom: 150px;
+}
+.brand__title {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.brand__top {
+  margin: 0 auto;
+  margin-bottom: 80px;
+  width: 1400px;
+  padding: 0 150px;
+}
+.brand__top .row {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  justify-content: space-around;
+}
+.brand__item {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0.7;
+  border-radius: 32px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 100px;
+}
+.brand__bottom {
+  width: 100%;
+}
+.brand__bottom .row {
+  -moz-column-gap: 10px;
+       column-gap: 10px;
 }
