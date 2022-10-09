@@ -112,6 +112,13 @@ body {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  background: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
+  background-clip: text;
+  text-fill-color: rgba(255, 255, 255, 0.5);
+}
+.header__logo span {
   background: linear-gradient(307.72deg, #a7f306 2.04%, #f3cd06 98.59%), #ffffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -230,6 +237,18 @@ body {
   color: #1a1a1a;
   padding: 23px 35px;
   margin-bottom: 20px;
+  position: relative;
+  left: -200px;
+  opacity: 0;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+.header__btn_white._active {
+  left: 0;
+  opacity: 1;
 }
 .header__btn_black {
   align-self: flex-end;
@@ -237,17 +256,102 @@ body {
   padding: 23px 28px;
   border: 1px solid rgba(255, 255, 255, 0.2);
   background-color: transparent;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  position: relative;
+  right: -200px;
+  opacity: 0;
+}
+.header__btn_black._active {
+  right: 0;
+  opacity: 1;
 }
 .header__hand {
   position: absolute;
   width: 1300px;
   height: 644px;
-  bottom: -60px;
+  bottom: -70px;
   left: 0;
 }
 .header__hand img {
   width: 100%;
   height: 100%;
+}
+.header__rock {
+  position: absolute;
+  width: 409px;
+  height: 409px;
+  top: 180px;
+  left: 550px;
+  animation: rotate 40s linear infinite 0s forwards;
+  -webkit-animation: rotate 40s linear infinite 0s forwards;
+}
+.header__rock img {
+  width: 100%;
+  height: 100%;
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+    -webkit-transform: rotate(0deg) scale(0.8);
+    -moz-transform: rotate(0deg) scale(0.8);
+    -ms-transform: rotate(0deg) scale(0.8);
+    -o-transform: rotate(0deg) scale(0.8);
+  }
+  33% {
+    transform: rotate(120deg) scale(1);
+    -webkit-transform: rotate(120deg) scale(1);
+    -moz-transform: rotate(120deg) scale(1);
+    -ms-transform: rotate(120deg) scale(1);
+    -o-transform: rotate(120deg) scale(1);
+  }
+  66% {
+    transform: rotate(240deg) scale(1.1);
+    -webkit-transform: rotate(240deg) scale(1.1);
+    -moz-transform: rotate(240deg) scale(1.1);
+    -ms-transform: rotate(240deg) scale(1.1);
+    -o-transform: rotate(240deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.1);
+    -webkit-transform: rotate(360deg) scale(1);
+    -moz-transform: rotate(360deg) scale(1.1);
+    -ms-transform: rotate(360deg) scale(1.1);
+    -o-transform: rotate(360deg) scale(1.1);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(0.8);
+    -webkit-transform: rotate(0deg) scale(0.8);
+    -moz-transform: rotate(0deg) scale(0.8);
+    -ms-transform: rotate(0deg) scale(0.8);
+    -o-transform: rotate(0deg) scale(0.8);
+  }
+  33% {
+    transform: rotate(120deg) scale(1);
+    -webkit-transform: rotate(120deg) scale(1);
+    -moz-transform: rotate(120deg) scale(1);
+    -ms-transform: rotate(120deg) scale(1);
+    -o-transform: rotate(120deg) scale(1);
+  }
+  66% {
+    transform: rotate(240deg) scale(1.1);
+    -webkit-transform: rotate(240deg) scale(1.1);
+    -moz-transform: rotate(240deg) scale(1.1);
+    -ms-transform: rotate(240deg) scale(1.1);
+    -o-transform: rotate(240deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.1);
+    -webkit-transform: rotate(360deg) scale(1);
+    -moz-transform: rotate(360deg) scale(1.1);
+    -ms-transform: rotate(360deg) scale(1.1);
+    -o-transform: rotate(360deg) scale(1.1);
+  }
 }
 
 main {
@@ -261,6 +365,14 @@ main {
 .technlogy__title {
   margin-bottom: 80px;
   position: relative;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s;
+  position: relative;
+  opacity: 0;
+  bottom: -70px;
 }
 .technlogy__title::after {
   position: absolute;
@@ -275,6 +387,10 @@ main {
   background: url("../img/right-top-arr.svg") center/cover no-repeat;
   width: 125px;
   height: 125px;
+}
+.technlogy__title._active {
+  bottom: 0;
+  opacity: 1;
 }
 .technlogy__menu {
   width: 1300px;
@@ -441,6 +557,57 @@ main {
   flex-direction: column;
   row-gap: 60px;
 }
+.develop__item {
+  transition: all 1s 0.2s;
+  -webkit-transition: all 1s 0.2s;
+  -moz-transition: all 1s 0.2s;
+  -ms-transition: all 1s 0.2s;
+  -o-transition: all 1s 0.2s;
+  position: relative;
+  opacity: 0;
+}
+.develop__item_1 {
+  left: -200px;
+}
+.develop__item_1._active {
+  left: 0;
+  opacity: 1;
+}
+.develop__item_2 {
+  left: -200px;
+}
+.develop__item_2._active {
+  left: 0;
+  opacity: 1;
+}
+.develop__item_3 {
+  left: -200px;
+}
+.develop__item_3._active {
+  left: 0;
+  opacity: 1;
+}
+.develop__item_4 {
+  right: -200px;
+}
+.develop__item_4._active {
+  right: 0;
+  opacity: 1;
+}
+.develop__item_5 {
+  right: -200px;
+}
+.develop__item_5._active {
+  right: 0;
+  opacity: 1;
+}
+.develop__item_6 {
+  right: -200px;
+}
+.develop__item_6._active {
+  right: 0;
+  opacity: 1;
+}
 .develop__img {
   width: 160px;
   height: 180px;
@@ -511,14 +678,40 @@ main {
 .support__title {
   margin-bottom: 100px;
 }
+.support__item {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  position: relative;
+}
+.support__item:hover img {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
 .support__img {
   margin-bottom: 36px;
   width: 320px;
   height: 400px;
+  overflow: hidden;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
 }
 .support__img img {
   width: 100%;
   height: 100%;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
 }
 .support__text {
   font-family: "Raleway";
@@ -526,7 +719,7 @@ main {
   font-weight: 600;
   font-size: 30px;
   line-height: 160%;
-  max-width: 312px;
+  max-width: 320px;
   color: #ffffff;
 }
 .support__btns {
@@ -586,6 +779,28 @@ main {
   text-align: center;
   margin: 0 auto;
   margin-bottom: 60px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  position: relative;
+  opacity: 0;
+  bottom: -70px;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+}
+.man__title._active {
+  bottom: 0;
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
 }
 .man__text {
   font-family: "Plus Jakarta Sans";
@@ -661,6 +876,19 @@ main {
   align-items: center;
   width: 240px;
   height: 100px;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+.brand__item:hover {
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  box-shadow: 5px 5px 10px rgb(50, 49, 49), -5px -5px 10px rgb(50, 49, 49);
 }
 .brand__bottom {
   width: 100%;
@@ -680,18 +908,18 @@ main {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-  background: linear-gradient(307.72deg, #a7f306 2.04%, #f3cd06 98.59%);
+  background: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
+  background-clip: text;
+  text-fill-color: rgba(255, 255, 255, 0.5);
+}
+.footer__logo span {
+  background: linear-gradient(307.72deg, #a7f306 2.04%, #f3cd06 98.59%), #ffffff;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-}
-.footer__logo span {
-  background: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: white;
-  background-clip: text;
-  text-fill-color: white;
 }
 .footer__text {
   font-family: "Plus Jakarta Sans";
