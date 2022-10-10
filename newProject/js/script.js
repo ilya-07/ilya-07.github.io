@@ -37,3 +37,12 @@ let swiper = new Swiper(".slide-content", {
       },
    },
 });
+
+let empty = {
+
+}
+const name = 'ilya';
+const city = 'simferopol'
+const get = `hallo my name is ${name} and im from ${city}`
+
+console.log(get)
