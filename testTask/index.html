@@ -7,6 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>testTask</title>
    <link rel="stylesheet" href="css/style.css">
+   <link type="text/css" rel="stylesheet" href="comeback/style.css" />
 </head>
 
 <body>
@@ -248,22 +249,31 @@
                   <h2>TENGO NOTICIAS EXCELENTES. ME PUSE EN CONTACTO CON LOS REPRESENTANTES DE BIOLICA Y OFRECIERON UN
                      DESCUENTO DEL 50% A LOS PRIMEROS 100 VISITANTES DE MI BLOG QUE PONGAN SU ORDEN.</h2>
                </div>
-               <div class="sell__img"><img src="img/biolica.png" alt=""></div>
+               <div class="sell__img">
+                  <img src="img/biolica.png" alt="">
+                  <div class="sell__img-text">
+                     <div class="row">
+                        <span>DESCUENTO</span>
+                        <span>55800COLONES</span>
+                        <span>27900COLONES</span>
+                     </div>
+                  </div>
+               </div>
             </section>
             <section class="sell__form">
                <div class="sell__title sell__title_sacond title">
                   <h2>RESERVE CON EL PRECIO DE PROMOCIÓN ANTES DE QUE LA OFERTA SE PASE AL SIGUIENTE LECTOR! <br> SU
                      TARIFA PROMOCIONAL FINALIZARÁ DESPUÉS DE:</h2>
                </div>
-               <div class="sell__time">00:00</div>
-               <form action="POST" class="sell__form">
+               <div class="sell__time">10:00</div>
+               <form class="sell__form">
                   <div class="sell__item">
                      <div class="sell__subtitle">Nome/Cognome</div>
                      <input placeholder="Alejandro Rodriguez" type="text" class="sell__input">
                   </div>
                   <div class="sell__item">
                      <div class="sell__subtitle">Mob.telefono</div>
-                     <input placeholder="+506 123456789" type="text" class="sell__input">
+                     <input placeholder="+506 123456789" type="number" class="sell__input">
                   </div>
                   <button class="sell__btn">Ordene Biolica con 50% de descuento!</button>
                   <div class="sell__undertitle title">
@@ -289,7 +299,6 @@
                      </div>
                   </div>
                   <div class="comments__text">
-                     <div class="black"></div>
                      <p>¡Querida Adamari, estoy muy agradecida por su recomendación! He leído mucho sobre <span
                            class="red">Biolica</span> pero
                         tenía miedo y no pensé que funcionaría. Solo lo pedí después de leer su publicación.Han pasado
@@ -329,7 +338,6 @@
                      </div>
                   </div>
                   <div class="comments__text">
-                     <div class="black"></div>
                      <p>Cariño, Adamari, tienes un blog maravilloso y todo lo que recomiendas realmente funciona.
                         También probé docenas de dietas y programas de pérdida de peso, pero los resultados siempre
                         estuvieron por debajo de mis expectativas. Peso 85 kg y mi estatura es 1.63 cm. Ordené <span
@@ -368,7 +376,6 @@
                      </div>
                   </div>
                   <div class="comments__text">
-                     <div class="black"></div>
                      <p>Recibí el paquete ayer. Estoy muy emocionada, no puedo esperar los primeros resultados.</p>
                   </div>
                   <div class="comments__added"><img src="img/a-7.jpg" alt=""></div>
@@ -384,7 +391,6 @@
                      </div>
                   </div>
                   <div class="comments__text">
-                     <div class="black"></div>
                      <p>¡Cariño, Adamari! ¡Gracias! Bajé mis kilos de más tan rápido y sin mucho esfuerzo.¡Es un
                         verdadero milagro, gracias por contarnos todo sobre este producto!</p>
                   </div>
@@ -394,8 +400,32 @@
          </div>
       </article>
       <article class="discount">
-         <div class="container"><a href="#" class="discount__link">ORDENAR AHORA Biolica CON 50% DE DESCUENTO
-               <span></span></a></div>
+         <div class="container">
+            <a href="#" class="discount__link">
+               ORDENAR AHORA Biolica CON 50% DE DESCUENTO
+               <span></span>
+            </a>
+         </div>
+      </article>
+      <article class="back">
+         <div class="outss">
+            <div class="outssback"></div>
+            <div class="outsstext">
+               <div class="outsscl">x</div>
+               <form class="back__form">
+                  <div class="back__title">Подождите! Для вас есть уникальное предложение - скидка 50%</div>
+                  <div class="back__item back">
+                     <div class="back__subtitle">Nome/Cognome</div>
+                     <input placeholder="Alejandro Rodriguez" type="text" class="back__input">
+                  </div>
+                  <div class="back__item">
+                     <div class="back__subtitle">Mob.telefono</div>
+                     <input placeholder="+506 123456789" type="number" class="back__input">
+                  </div>
+                  <button class="back__btn">Ordene Biolica con 50% de descuento!</button>
+               </form>
+            </div>
+         </div>
       </article>
    </main>
    <footer class="footer">
@@ -408,7 +438,7 @@
                </div>
                <div class="footer__social">
                   <div class="row">
-                     <div class="footer__icon"><img src="img/f-1.svg" alt="sorry"></div>
+                     <div class="footer__icon"><img src="img/f-1.svg" alt=""></div>
                      <div class="footer__icon"><img src="img/f-2.svg" alt=""></div>
                      <div class="footer__icon"><img src="img/f-3.svg" alt=""></div>
                      <div class="footer__icon"><img src="img/f-4.svg" alt=""></div>
@@ -419,7 +449,9 @@
          <div class="footer__data">© 2000-2022, HOLA S.L.</div>
       </div>
    </footer>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
    <script src="js/script.js"></script>
+   <script type="text/javascript" src="comeback/script.js"></script>
 </body>
 
 </html>
