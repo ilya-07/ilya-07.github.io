@@ -131,6 +131,7 @@ body {
       position: relative;
       @media (max-width: 768px) {
          font-size: 28px;
+         color: #fff;
       }
       &::after {
          position: absolute;
@@ -150,6 +151,9 @@ body {
          -moz-transition: all 0.5s;
          -ms-transition: all 0.5s;
          -o-transition: all 0.5s;
+         @media (max-width: 768px) {
+            background-color: #fff;
+         }
       }
       &:hover {
          &::after {
