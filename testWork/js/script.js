@@ -19,7 +19,7 @@ let swiper = new Swiper(".slide-content", {
    pagination: {
       el: ".swiper-pagination",
       clickable: true,
-      dynamicBullets: true,
+      // dynamicBullets: true,
    },
    navigation: {
       nextEl: ".swiper-button-next",
@@ -27,18 +27,24 @@ let swiper = new Swiper(".slide-content", {
    },
 
    breakpoints: {
+      // 0: {
+      //    slidesPerView: 1,
+      // },
+      // 620: {
+      //    slidesPerView: 1,
+      // },
       0: {
-         slidesPerView: 1,
-      },
-      620: {
-         slidesPerView: 1,
-      },
-      992: {
          slidesPerView: 2,
       },
-      1200: {
+      768: {
          slidesPerView: 3,
       },
+      // 992: {
+      //    slidesPerView: 3,
+      // },
+      // 1200: {
+      //    slidesPerView: 3,
+      // },
    },
 });
 
