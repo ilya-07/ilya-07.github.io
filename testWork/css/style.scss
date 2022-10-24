@@ -128,8 +128,34 @@ body {
       line-height: 26px;
       font-weight: 400;
       color: #505050;
+      position: relative;
       @media (max-width: 768px) {
          font-size: 28px;
+      }
+      &::after {
+         position: absolute;
+         content: "";
+         bottom: -5px;
+         left: 50%;
+         height: 2px;
+         border-radius: 3px;
+         -webkit-border-radius: 3px;
+         -moz-border-radius: 3px;
+         -ms-border-radius: 3px;
+         -o-border-radius: 3px;
+         width: 0;
+         background-color: #c1b093;
+         transition: all 0.5s;
+         -webkit-transition: all 0.5s;
+         -moz-transition: all 0.5s;
+         -ms-transition: all 0.5s;
+         -o-transition: all 0.5s;
+      }
+      &:hover {
+         &::after {
+            left: 0;
+            width: 100%;
+         }
       }
    }
 
@@ -572,12 +598,12 @@ body {
       width: 958px;
       height: 642px;
       position: relative;
-      @media (max-width: 1830px) {
-         width: 700px;
+      @media (max-width: 1870px) {
+         width: 650px;
          height: 500px;
       }
       @media (max-width: 1600px) {
-         width: 1180px;
+         width: 1130px;
          height: 799px;
          margin: 0 auto;
          margin-bottom: 20px;
@@ -613,6 +639,10 @@ body {
 
    &__slider {
       max-width: 860px;
+      margin-right: 49px;
+      @media (max-width: 1600px) {
+         margin-right: 0;
+      }
       @media (max-width: 992px) {
          max-width: 600px;
       }
@@ -967,11 +997,7 @@ body {
          color: #ffffff;
          background-color: #cab898;
       }
-      transition: all 10.5;
-      -webkit-transition: all 10.5;
-      -moz-transition: all 10.5;
-      -ms-transition: all 10.5;
-      -o-transition: all 10.5;
+      transition: 0.5s;
       @media (max-width: 768px) {
          padding: 10px 15px;
       }
@@ -986,11 +1012,6 @@ body {
 
    &__info {
       display: none;
-      transition: all 10.5;
-      -webkit-transition: all 10.5;
-      -moz-transition: all 10.5;
-      -ms-transition: all 10.5;
-      -o-transition: all 10.5;
       opacity: 0;
       &.active-tab {
          display: block;
@@ -1728,6 +1749,10 @@ body {
          width: 280px;
          margin-bottom: 10px;
       }
+      transition: all 0.5s;
+      &:focus {
+         box-shadow: 5px 5px 10px #cab898;
+      }
    }
 
    &__textarea {
@@ -1740,6 +1765,7 @@ body {
       line-height: 24px;
       font-weight: 400;
       color: #505050;
+      transition: all 0.5s;
       &::placeholder {
          font-family: Montserrat;
          font-size: 15px;
@@ -1762,6 +1788,9 @@ body {
       @media (max-width: 576px) {
          width: 280px;
          margin-bottom: 17px;
+      }
+      &:focus {
+         box-shadow: 5px 5px 10px #cab898;
       }
    }
 

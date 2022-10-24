@@ -243,11 +243,35 @@ body {
   line-height: 26px;
   font-weight: 400;
   color: #505050;
+  position: relative;
 }
 @media (max-width: 768px) {
   .header__link {
     font-size: 28px;
   }
+}
+.header__link::after {
+  position: absolute;
+  content: "";
+  bottom: -5px;
+  left: 50%;
+  height: 2px;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  width: 0;
+  background-color: #c1b093;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.header__link:hover::after {
+  left: 0;
+  width: 100%;
 }
 .header__btn {
   opacity: 1;
@@ -739,15 +763,15 @@ body {
   height: 642px;
   position: relative;
 }
-@media (max-width: 1830px) {
+@media (max-width: 1870px) {
   .gallery__image {
-    width: 700px;
+    width: 650px;
     height: 500px;
   }
 }
 @media (max-width: 1600px) {
   .gallery__image {
-    width: 1180px;
+    width: 1130px;
     height: 799px;
     margin: 0 auto;
     margin-bottom: 20px;
@@ -792,6 +816,12 @@ body {
 }
 .gallery__slider {
   max-width: 860px;
+  margin-right: 49px;
+}
+@media (max-width: 1600px) {
+  .gallery__slider {
+    margin-right: 0;
+  }
 }
 @media (max-width: 992px) {
   .gallery__slider {
@@ -1211,11 +1241,7 @@ body {
   background-color: transparent;
   border-radius: 16px;
   border: 1px solid #cab898;
-  transition: all 10.5;
-  -webkit-transition: all 10.5;
-  -moz-transition: all 10.5;
-  -ms-transition: all 10.5;
-  -o-transition: all 10.5;
+  transition: 0.5s;
 }
 .tab__click.active-tab {
   color: #ffffff;
@@ -1237,11 +1263,6 @@ body {
 }
 .tab__info {
   display: none;
-  transition: all 10.5;
-  -webkit-transition: all 10.5;
-  -moz-transition: all 10.5;
-  -ms-transition: all 10.5;
-  -o-transition: all 10.5;
   opacity: 0;
 }
 .tab__info.active-tab {
@@ -2152,6 +2173,7 @@ body {
   border: 1px solid #cab898;
   border-radius: 28.6px;
   margin-bottom: 32px;
+  transition: all 0.5s;
 }
 @media (max-width: 1520px) {
   .visit__input {
@@ -2177,6 +2199,9 @@ body {
     margin-bottom: 10px;
   }
 }
+.visit__input:focus {
+  box-shadow: 5px 5px 10px #cab898;
+}
 .visit__textarea {
   width: 814px;
   height: 101px;
@@ -2187,6 +2212,7 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #505050;
+  transition: all 0.5s;
   padding: 17px 30px 30px 30px;
   margin-bottom: 39px;
 }
@@ -2232,6 +2258,9 @@ body {
     width: 280px;
     margin-bottom: 17px;
   }
+}
+.visit__textarea:focus {
+  box-shadow: 5px 5px 10px #cab898;
 }
 .visit__btn {
   font-family: Montserrat;
