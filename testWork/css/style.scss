@@ -1172,6 +1172,30 @@ body {
    &__info {
       background-color: #f3f3f3;
       padding: 95px 72px 98px 82px;
+      position: relative;
+      &::after {
+         position: absolute;
+         content: "";
+         width: 2px;
+         height: 810px;
+         background-color: #cab898;
+         top: 111px;
+         left: 45px;
+         @media (max-width: 1700px) {
+            top: 95px;
+            left: 25px;
+         }
+         @media (max-width: 1450px) {
+            height: 845px;
+         }
+         @media (max-width: 768px) {
+            top: 65px;
+            left: 5px;
+         }
+         @media (max-width: 425px) {
+            height: 990px;
+         }
+      }
       @media (max-width: 1700px) {
          padding: 80px 40px 50px 40px;
       }

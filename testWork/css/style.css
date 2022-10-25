@@ -1463,6 +1463,38 @@ body {
 .price__info {
   background-color: #f3f3f3;
   padding: 95px 72px 98px 82px;
+  position: relative;
+}
+.price__info::after {
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 810px;
+  background-color: #cab898;
+  top: 111px;
+  left: 45px;
+}
+@media (max-width: 1700px) {
+  .price__info::after {
+    top: 95px;
+    left: 25px;
+  }
+}
+@media (max-width: 1450px) {
+  .price__info::after {
+    height: 845px;
+  }
+}
+@media (max-width: 768px) {
+  .price__info::after {
+    top: 65px;
+    left: 5px;
+  }
+}
+@media (max-width: 425px) {
+  .price__info::after {
+    height: 990px;
+  }
 }
 @media (max-width: 1700px) {
   .price__info {
