@@ -1,0 +1,782 @@
+@import "nullstyle";
+@import "fonts";
+.container {
+   max-width: 1240px;
+   padding: 0 20px;
+   margin: 0 auto;
+}
+.title {
+   font-family: "Golos";
+   font-style: normal;
+   font-weight: 600;
+   font-size: 29px;
+   line-height: 116%;
+   font-feature-settings: "pnum" on, "lnum" on;
+   color: #003154;
+}
+.btn {
+   font-family: "Golos";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 148%;
+   padding: 12px 32px;
+   font-feature-settings: "pnum" on, "lnum" on;
+   color: #ffffff;
+   background: #003154;
+   border-radius: 2px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+   -ms-border-radius: 2px;
+   -o-border-radius: 2px;
+}
+.link {
+   font-family: "Golos";
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 148%;
+   font-feature-settings: "pnum" on, "lnum" on;
+   color: #1e1e1e;
+   position: relative;
+   &::after {
+      position: absolute;
+      content: "";
+      right: -4px;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      width: 8px;
+      height: 4px;
+   }
+}
+
+.header {
+}
+.main {
+}
+.block {
+}
+.footer {
+   background: #003154;
+   padding: 72px 0;
+}
+.header {
+   &__top {
+      padding: 25px 0;
+   }
+
+   &__logo {
+      .row {
+         justify-content: start;
+      }
+   }
+
+   &__logo-img {
+      width: 201.6px;
+      height: 31.99px;
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+
+   &__logo-text {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 158%;
+      margin-left: 24px;
+      font-feature-settings: "pnum" on, "lnum" on;
+      max-width: 360px;
+      color: #8f9090;
+   }
+
+   &__additional {
+      width: 217px;
+   }
+
+   &__callback {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 158%;
+      /* or 22px */
+
+      display: flex;
+      align-items: center;
+      font-feature-settings: "pnum" on, "lnum" on;
+
+      /* Main dark blue */
+
+      color: #003154;
+      position: relative;
+      &::after {
+         position: absolute;
+         content: "";
+         background: url("../img/mail.svg") center/cover no-repeat;
+         top: 0;
+         width: 17px;
+         height: 20px;
+         left: -23px;
+      }
+   }
+
+   &__lang {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 158%;
+      /* or 22px */
+
+      font-feature-settings: "pnum" on, "lnum" on;
+
+      /* Main dark blue */
+
+      color: #003154;
+   }
+
+   &__search {
+   }
+
+   &__navigation {
+      padding: 16px 0;
+   }
+
+   &__menu {
+   }
+
+   &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__link {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 148%;
+      /* or 22px */
+
+      display: flex;
+      align-items: center;
+      font-feature-settings: "pnum" on, "lnum" on;
+
+      /* Black 70% */
+
+      color: #404040;
+   }
+
+   &__body {
+      background: #f7f7f8;
+      position: relative;
+      padding-bottom: 40px;
+      &::after {
+         position: absolute;
+         content: "";
+         height: 100%;
+         background: #60c0c3;
+         width: 426px;
+         right: 0;
+         top: 0px;
+      }
+   }
+
+   &__item {
+   }
+   .swiper-slide {
+      padding: 80px 0 40px 0;
+   }
+   .swiper-pagination {
+      margin-bottom: 40px;
+   }
+
+   &__row {
+   }
+
+   &__info {
+   }
+
+   &__icons {
+      width: 208px;
+      margin-bottom: 16px;
+   }
+
+   &__icon {
+      width: 40px;
+      height: 40px;
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+
+   &__title {
+      max-width: 486px;
+      margin-bottom: 16px;
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 33px;
+      line-height: 116%;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #003154;
+      margin-bottom: 16px;
+   }
+
+   &__subtitle {
+      margin-bottom: 56px;
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 162%;
+      max-width: 486px;
+      display: flex;
+      align-items: center;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #404040;
+   }
+
+   &__btn {
+      font-family: "Golos";
+      font-size: 15px;
+      line-height: 148%;
+      background-color: transparent;
+      font-feature-settings: "pnum" on, "lnum" on;
+      border: 1px solid #003154;
+      border-radius: 2px;
+      padding: 12px 58px;
+      color: #003154;
+   }
+
+   &__img {
+      width: 588px;
+      height: 440px;
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+.product {
+   padding: 80px 0;
+   .row {
+      align-items: start;
+   }
+   &__about {
+   }
+
+   &__title {
+      margin-bottom: 24px;
+   }
+
+   &__link {
+   }
+
+   &__info {
+      // margin-left: 137px;
+      .row {
+         column-gap: 56px;
+      }
+   }
+
+   &__item {
+      max-width: 184px;
+      ul {
+         row-gap: 18px;
+         display: flex;
+         flex-direction: column;
+         position: relative;
+         &::after {
+            position: absolute;
+            content: "";
+            top: 0;
+            height: 100%;
+            background-color: #e1e1e1;
+            width: 1px;
+            left: -20px;
+         }
+      }
+   }
+
+   &__list {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 158%;
+      max-width: 184px;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #1e1e1e;
+      &:last-child {
+         // margin-bottom: ? 0;
+      }
+   }
+}
+.company {
+   background: #003154;
+   padding: 80px 0;
+   &__title {
+      margin: 0 auto;
+      max-width: 788px;
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 23px;
+      line-height: 130%;
+      text-align: center;
+      font-feature-settings: "pnum" on, "lnum" on;
+      margin-bottom: 101px;
+      color: #ffffff;
+   }
+
+   &__info {
+      z-index: 2;
+      width: 100%;
+   }
+
+   &__item {
+      z-index: 2;
+      position: relative;
+      &::after {
+         position: absolute;
+         content: "";
+         z-index: -1;
+      }
+      &:nth-child(1) {
+         &::after {
+            width: 95px;
+            height: 95px;
+            background: url("../img/count-1.svg") center/cover no-repeat;
+            left: -37px;
+            top: -8px;
+         }
+      }
+      &:nth-child(2) {
+         &::after {
+            width: 84px;
+            height: 80px;
+            background: url("../img/count-2.svg") center/cover no-repeat;
+            left: -37px;
+            top: -8px;
+         }
+      }
+      &:nth-child(3) {
+         &::after {
+            width: 80px;
+            height: 80px;
+            background: url("../img/count-3.svg") center/cover no-repeat;
+            left: -37px;
+            top: -8px;
+         }
+      }
+      &:nth-child(4) {
+         &::after {
+            width: 88px;
+            height: 71px;
+            background: url("../img/count-4.svg") center/cover no-repeat;
+            left: -37px;
+            top: -8px;
+         }
+      }
+   }
+
+   &__count {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 51px;
+      line-height: 110%;
+      font-feature-settings: "pnum" on, "lnum" on;
+      margin-bottom: 8px;
+      color: #ffffff;
+      z-index: 2;
+      span {
+         font-size: 20px;
+      }
+   }
+
+   &__text {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 148%;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #ffffff;
+      z-index: 2;
+   }
+}
+.container {
+}
+.row {
+}
+.barry {
+   background: #f2f6fb;
+   &__block {
+      flex: 0 0 50%;
+   }
+   &__info {
+      padding: 104px 0px 104px 80px;
+      background: #f2f6fb;
+      height: 100%;
+   }
+   &__img {
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+
+   &__undertitle {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 140%;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-feature-settings: "pnum" on, "lnum" on;
+      margin-bottom: 8px;
+      color: #888888;
+   }
+
+   &__title {
+      max-width: 418px;
+      margin-bottom: 16px;
+   }
+
+   &__text {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 174%;
+      max-width: 418px;
+      display: flex;
+      align-items: center;
+      font-feature-settings: "tnum" on, "lnum" on;
+      margin-bottom: 32px;
+      color: #404040;
+   }
+
+   &__link {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 148%;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #1e1e1e;
+   }
+}
+.help {
+   padding: 64px 0;
+   &__row {
+      align-items: end;
+   }
+   &__about {
+      padding-bottom: 32px;
+   }
+
+   &__undertitle {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 140%;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-feature-settings: "pnum" on, "lnum" on;
+      margin-bottom: 8px;
+      color: #888888;
+   }
+
+   &__title {
+      margin-bottom: 16px;
+      max-width: 282px;
+   }
+
+   &__text {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 174%;
+      font-feature-settings: "tnum" on, "lnum" on;
+      color: #404040;
+      max-width: 282px;
+      -webkit-font-feature-settings: "tnum" on, "lnum" on;
+      -moz-font-feature-settings: "tnum" on, "lnum" on;
+   }
+
+   &__info {
+      .row {
+         column-gap: 24px;
+      }
+   }
+
+   &__item {
+      position: relative;
+      &::after {
+         position: absolute;
+         content: "";
+         bottom: 0;
+         left: 0;
+         height: 450px;
+         width: 100%;
+         background: #f2f6fb;
+         z-index: -1;
+      }
+   }
+
+   &__img {
+      width: 384px;
+      height: 308px;
+      margin-bottom: 32px;
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+
+   &__desc {
+      padding: 0px 32px 40px 32px;
+   }
+   &__subtitle {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 110%;
+      margin-bottom: 16px;
+      font-feature-settings: "pnum" on, "lnum" on;
+      max-width: 320px;
+      color: #1e1e1e;
+   }
+
+   &__subtext {
+      max-width: 320px;
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 174%;
+      /* or 26px */
+
+      display: flex;
+      align-items: center;
+      font-feature-settings: "tnum" on, "lnum" on;
+      margin-bottom: 40px;
+      color: #404040;
+   }
+
+   &__btn {
+   }
+}
+.news {
+   padding: 64px 0px 112px 0px;
+   &__about {
+      margin-bottom: 32px;
+   }
+
+   &__title {
+   }
+
+   &__link {
+   }
+
+   &__info {
+      width: 100%;
+      .row {
+         // column-gap: 2px;
+      }
+   }
+   &__desc {
+      padding: 22px 24px 32px 22px;
+      background: #f7f7f8;
+      width: 384px;
+   }
+
+   &__item {
+      // flex: 0 0 33.333%;
+      width: 384px;
+   }
+
+   &__img {
+      width: 384px;
+      height: 288px;
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+
+   &__data {
+      width: 150px;
+   }
+
+   &__data-text {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 158%;
+      display: flex;
+      align-items: center;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #404040;
+   }
+
+   &__data-num {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 158%;
+      display: flex;
+      align-items: center;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #8f9090;
+   }
+
+   &__subtitle {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 152%;
+      margin-bottom: 8px;
+      font-feature-settings: "pnum" on, "lnum" on;
+      max-width: 336px;
+      color: #000103;
+   }
+
+   &__text {
+      max-width: 336px;
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 158%;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #888888;
+      height: 44px;
+      overflow-y: scroll;
+   }
+}
+.cataloge {
+   position: relative;
+   padding: 160px 0px 48px 0px;
+   &__block {
+      padding: 40px;
+      background: #fff;
+      display: inline-block;
+   }
+
+   &__title {
+      max-width: 392px;
+      margin-bottom: 16px;
+   }
+
+   &__text {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 174%;
+      margin-bottom: 40px;
+      max-width: 392px;
+      display: flex;
+      align-items: center;
+      font-feature-settings: "tnum" on, "lnum" on;
+      color: #404040;
+   }
+
+   &__btn {
+   }
+
+   &__bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      img {
+         width: 100%;
+         height: 100%;
+      }
+   }
+}
+.brands {
+   padding: 64px 0;
+   padding-bottom: 80px;
+
+   &__title {
+      margin-bottom: 47px;
+   }
+
+   &__info {
+   }
+
+   &__item {
+      .row {
+         align-items: start;
+         justify-content: start;
+         column-gap: 67px;
+      }
+      &:nth-child(1) {
+         margin-bottom: 54px;
+      }
+   }
+
+   &__block {
+      position: relative;
+      &::after {
+         position: absolute;
+         content: "";
+         top: 0;
+         height: 100%;
+         min-height: 150px;
+
+         background-color: #e1e1e1;
+         width: 1px;
+         left: -20px;
+      }
+   }
+
+   &__logo {
+      margin-bottom: 15px;
+      height: 34px;
+   }
+
+   &__text {
+      font-family: "Golos";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 158%;
+      font-feature-settings: "pnum" on, "lnum" on;
+      color: #888888;
+      max-width: 242px;
+      &_1 {
+         color: #404040;
+      }
+   }
+}
+.container {
+}
+.title {
+}
+.row {
+}
