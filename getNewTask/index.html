@@ -35,16 +35,30 @@
       </div>
       <div class="header__navigation">
          <div class="container">
-            <nav class="header__menu">
-               <ul class="header__list">
-                  <li><a href="#" class="header__link">Продукция</a></li>
-                  <li><a href="#" class="header__link">Где купить</a></li>
-                  <li><a href="#" class="header__link">Сервис и поддержка</a></li>
-                  <li><a href="#" class="header__link">Решения</a></li>
-                  <li><a href="#" class="header__link">О компании</a></li>
-                  <li><a href="#" class="header__link">Медиа</a></li>
-                  <li><a href="#" class="header__link">Новости</a></li>
-                  <li><a href="#" class="header__link">Контакты</a></li>
+            <div class="thirdSwiper">
+               <nav class="header__menu third-slide-content">
+                  <ul class="header__list-second swiper-wrapper">
+                     <li class="swiper-slide link-0"></li>
+                     <li class="swiper-slide link-1"></li>
+                     <li class="swiper-slide link-2"></li>
+                     <li class="swiper-slide link-3"></li>
+                     <li class="swiper-slide link-4"></li>
+                     <li class="swiper-slide link-5"></li>
+                     <li class="swiper-slide link-6"></li>
+                     <li class="swiper-slide link-7"></li>
+                  </ul>
+               </nav>
+            </div>
+            <nav class="header__menu ">
+               <ul class="header__list ">
+                  <li><a data-da=".link-0, 768, 0" href="#" class="header__link">Продукция</a></li>
+                  <li><a data-da=".link-1, 768, 0" href="#" class="header__link">Где купить</a></li>
+                  <li><a data-da=".link-2, 768, 0" href="#" class="header__link">Сервис и поддержка</a></li>
+                  <li><a data-da=".link-3, 768, 0" href="#" class="header__link">Решения</a></li>
+                  <li><a data-da=".link-4, 768, 0" href="#" class="header__link">О компании</a></li>
+                  <li><a data-da=".link-5, 768, 0" href="#" class="header__link">Медиа</a></li>
+                  <li><a data-da=".link-6, 768, 0" href="#" class="header__link">Новости</a></li>
+                  <li><a data-da=".link-7, 768, 0" href="#" class="header__link">Контакты</a></li>
                </ul>
             </nav>
          </div>
@@ -54,7 +68,7 @@
             <div class="swiper-wrapper">
                <div class="swiper-slide header__item">
                   <div class="container">
-                     <div class="row">
+                     <div class="header__row row">
                         <div class="header__info">
                            <div class="header__icons">
                               <div class="row">
@@ -86,7 +100,7 @@
                </div>
                <div class="swiper-slide header__item">
                   <div class="container">
-                     <div class="row">
+                     <div class="header__row row ">
                         <div class="header__info">
                            <div class="header__icons">
                               <div class="row">
@@ -118,7 +132,7 @@
                </div>
                <div class="swiper-slide header__item">
                   <div class="container">
-                     <div class="row">
+                     <div class="row header__row">
                         <div class="header__info">
                            <div class="header__icons">
                               <div class="row">
@@ -361,6 +375,7 @@
             </div>
          </div>
          <div class="cataloge__bg"><img src="img/barry-bg.png" alt=""></div>
+         <div class="cataloge__bg-mobile"><img src="img/barry-bg-2.png" alt=""></div>
       </article>
       <article class="brands">
          <div class="container">
@@ -368,29 +383,36 @@
                <h2>Наши бренды</h2>
             </div>
             <div class="brands__info">
+               <div class="secondSwiper">
+                  <div class="second-slide-content">
+                     <div class="swiper-wrapper swiperGet">
+                     </div>
+                  </div>
+                  <div class="second-swiper-pagination"></div>
+               </div>
                <div class="brands__item">
                   <div class="row">
-                     <div class="brands__block">
-                        <div class="brands__logo"><img src="img/brand-1.svg" alt=""></div>
+                     <div class="brands__block swiper-slide" data-da=".swiperGet, 576, 0">
+                        <div class="brands__logo"></div>
                         <div class="brands__text brands__text_1">
                            <p>Лидер в производстве профессионального оборудования для торговли, общественного питания
                               и кухни</p>
                         </div>
                      </div>
-                     <div class="brands__block">
-                        <div class="brands__logo"><img src="img/brand-3.svg" alt=""></div>
+                     <div class="brands__block swiper-slide" data-da=".swiperGet, 576, 1">
+                        <div class="brands__logo"></div>
                         <div class="brands__text">
                            <p>Витрины для кондитерских, экспресс кофеен, гастробаров и продуктовых магазинов</p>
                         </div>
                      </div>
-                     <div class="brands__block">
-                        <div class="brands__logo"><img src="img/brand-5.svg" alt=""></div>
+                     <div class="brands__block swiper-slide" data-da=".swiperGet, 576, 2">
+                        <div class="brands__logo"></div>
                         <div class="brands__text">
                            <p>Профессиональное холодильное оборудование для ритейла</p>
                         </div>
                      </div>
-                     <div class="brands__block">
-                        <div class="brands__logo"><img src="img/brand-7.svg" alt=""></div>
+                     <div class="brands__block swiper-slide" data-da=".swiperGet, 576, 3">
+                        <div class="brands__logo"></div>
                         <div class="brands__text">
                            <p>Решения по хранению для медицинских учреждений и организаций</p>
                         </div>
@@ -399,20 +421,20 @@
                </div>
                <div class="brands__item">
                   <div class="row">
-                     <div class="brands__block">
-                        <div class="brands__logo"><img src="img/brand-2.svg" alt=""></div>
+                     <div class="brands__block swiper-slide" data-da=".swiperGet, 576, 4">
+                        <div class="brands__logo"></div>
                         <div class="brands__text">
                            <p>Профессиональное оборудование для кухни</p>
                         </div>
                      </div>
-                     <div class="brands__block">
-                        <div class="brands__logo"><img src="img/brand-4.svg" alt=""></div>
+                     <div class="brands__block swiper-slide" data-da=".swiperGet, 576, 5">
+                        <div class="brands__logo"></div>
                         <div class="brands__text">
                            <p>Системы стеклянных дверей для холодильного оборудования и стеллажи для ритейла</p>
                         </div>
                      </div>
-                     <div class="brands__block">
-                        <div class="brands__logo"><img src="img/brand-6.svg" alt=""></div>
+                     <div class="brands__block swiper-slide" data-da=".swiperGet, 576, 6">
+                        <div class="brands__logo"></div>
                         <div class="brands__text">
                            <p>Профессиональное оборудование для предприятий торговли и HoReCa</p>
                         </div>
@@ -420,7 +442,6 @@
                   </div>
                </div>
             </div>
-         </div>
       </article>
    </main>
    <footer class="footer">
@@ -428,10 +449,43 @@
          <div class="footer__top">
             <div class="footer__row">
                <div class="footer__item">
-                  <div class="footer__title"></div>
+                  <div class="footer__title">Продукция</div>
                   <ul class="footer__list">
-                     <li><a href="#" class="footer__link"></a></li>
+                     <li><a href="#" class="footer__link">Шкафы холодильные</a></li>
+                     <li><a href="#" class="footer__link">Столы холодильные</a></li>
+                     <li><a href="#" class="footer__link">Камеры холодильные</a></li>
+                     <li><a href="#" class="footer__link">Камеры холодильные</a></li>
+                     <li><a href="#" class="footer__link">Шоковая заморозка</a></li>
+                     <li><a href="#" class="footer__link">Лари морозильные</a></li>
                   </ul>
+               </div>
+               <div class="footer__item">
+                  <ul class="footer__list">
+                     <li><a href="#" class="footer__link">Модульные стеллажные системы</a></li>
+                     <li><a href="#" class="footer__link">Оборудование для пекарен</a></li>
+                     <li><a href="#" class="footer__link">Барные столы и шкафы</a></li>
+                     <li><a href="#" class="footer__link">Шкафы для вызревания</a></li>
+                     <li><a href="#" class="footer__link">Продуктоматы iCell</a></li>
+                     <li><a href="#" class="footer__link">Термоконтейнеры FoodLine</a></li>
+                     <li><a href="#" class="footer__link">Шкафы медицинские</a></li>
+                  </ul>
+               </div>
+               <div class="footer__item">
+                  <div class="footer__title">Сервис и поддержка</div>
+                  <ul class="footer__list">
+                     <li><a href="#" class="footer__link">Найти авторизованный сервисный центр</a></li>
+                     <li><a href="#" class="footer__link">Скачайте документы и рекламные материалы</a></li>
+                     <li><a href="#" class="footer__link">Найти авторизованный сервисный центр</a></li>
+                     <li><a href="#" class="footer__link">Найти авторизованный сервисный центр</a></li>
+                  </ul>
+               </div>
+               <div class="footer__item">
+                  <div class="footer__title">Где купить</div>
+                  <div class="footer__title">Решения</div>
+                  <div class="footer__title">О компании</div>
+                  <div class="footer__title">Медиа</div>
+                  <div class="footer__title">Новости</div>
+                  <div class="footer__title">Контакты</div>
                </div>
             </div>
          </div>
@@ -439,7 +493,12 @@
             <div class="footer__row">
                <div class="footer__item">
                   <ul class="footer__list">
-                     <li><a href="#" class="footer__link"></a></li>
+                     <li><a href="#" class="footer__link">Подбор холодильного стола Polair™</a></li>
+                  </ul>
+               </div>
+               <div class="footer__item">
+                  <ul class="footer__list">
+                     <li><a href="#" class="footer__link">Подбор холодильной машины Polair™</a></li>
                   </ul>
                </div>
             </div>
@@ -448,10 +507,12 @@
             <div class="row">
                <div class="footer__block">
                   <div class="footer__logo"><img src="img/footer-logo.svg" alt=""></div>
-                  <div class="footer__data"></div>
+                  <div class="footer__data">© АО «Полаир-Недвижимость» 2022</div>
                   <div class="footer__police">
                      <div class="row">
-                        <div class="footer__data-text"></div>
+                        <div class="footer__data-text">Сделано в CULT</div>
+                        <div class="footer__data-text">Политика конфиденциальности</div>
+                        <div class="footer__data-text">Карта сайта</div>
                      </div>
                   </div>
                </div>
@@ -459,18 +520,25 @@
                   <div class="footer__back">
                      <div class="row">
                         <div class="footer__call">
-                           <div class="footer__number"></div>
-                           <div class="footer__level"></div>
+                           <div class="footer__number">+7 (495) 937-64-07</div>
+                           <div class="footer__level"> многоканальный</div>
                         </div>
                         <div class="footer__social">
-                           <div class="row"><img src="img/f-1.svg" alt="" class="footer__soc"></div>
+                           <div class="row">
+                              <div class="row"><img src="img/f-1.svg" alt="" class="footer__soc"></div>
+                              <div class="row"><img src="img/f-2.svg" alt="" class="footer__soc"></div>
+                              <div class="row"><img src="img/f-3.svg" alt="" class="footer__soc"></div>
+                              <div class="row"><img src="img/f-4.svg" alt="" class="footer__soc"></div>
+                           </div>
                         </div>
                      </div>
                   </div>
-                  <div class="footer__city"></div>
-                  <div class="footer__use"></div>
+                  <div class="footer__city">119334, город Москва, Ленинский проспект, дом 37, корпус 1, помещение 2-5,
+                     этаж 4</div>
+                  <div class="footer__use">При использовании материалов сайта ссылка обязательна.</div>
                   <div class="footer__undertext">
-                     <p></p>
+                     <p>Данный интернет-сайт носит исключительно информационный характер, и информация, размещённая
+                        на нём, не является публичной офертой, определяемой положениями ст. 437 ГК РФ.</p>
                   </div>
                </div>
             </div>
