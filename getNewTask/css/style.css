@@ -271,10 +271,19 @@ h6 {
          column-gap: 20px;
   }
 }
-@media (max-width: 768px) {
-  .header__list li {
-    min-width: 100px;
-  }
+.header__list li {
+  display: inline-block;
+  width: auto;
+  margin: 0 40px;
+}
+.header .thirdSwiper .swiper-slide {
+  width: 100px;
+  height: 50px;
+}
+.header .thirdSwiper .swiper-slide {
+  display: inline-block;
+  width: auto;
+  margin: 0 10px;
 }
 .header__link {
   font-family: "Golos";
@@ -283,6 +292,7 @@ h6 {
   font-size: 15px;
   line-height: 148%;
   white-space: nowrap;
+  text-align: center;
   color: #404040;
 }
 @media (max-width: 992px) {
@@ -295,6 +305,11 @@ h6 {
   .header__link {
     display: inline-block;
     min-width: 100px;
+    padding: 8px 12px;
+    background: #f7f7f8;
+    border-radius: 4px;
+    z-index: 2;
+    margin: 0 20px;
   }
 }
 .header__body {

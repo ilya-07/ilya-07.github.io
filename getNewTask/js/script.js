@@ -69,17 +69,22 @@ let secondSwiper = new Swiper(".second-slide-content", {
 });
 
 let thirdSwiper = new Swiper(".third-slide-content", {
-   slidesPerView: 8,
-   // spaceBetween: 20,
    loop: true,
    centerSlide: 'true',
    fade: 'true',
    grabCursor: 'true',
    enabled: false,
+   pagination: {
+      clickable: true,
+      dynamicBullets: true,
+   },
    breakpoints: {
       0: {
-         slidesPerView: 8,
+         slidesPerView: 3,
          enabled: true,
+      },
+      380: {
+         slidesPerView: 4,
       },
       768: {
          enabled: false,
