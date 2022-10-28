@@ -9,6 +9,23 @@
 //    menu.classList.toggle('active');
 // })
 
+let thirdSwiper = new Swiper(".third-slide-content", {
+   loop: true,
+   enabled: false,
+   breakpoints: {
+      0: {
+         slidesPerView: 2,
+         enabled: true,
+      },
+      380: {
+         slidesPerView: 4,
+      },
+      768: {
+         enabled: false,
+      },
+   },
+});
+
 let swiper = new Swiper(".slide-content", {
    slidesPerView: 3,
    spaceBetween: 20,
@@ -63,30 +80,6 @@ let secondSwiper = new Swiper(".second-slide-content", {
       },
       576: {
          slidesPerView: 1,
-         enabled: false,
-      },
-   },
-});
-
-let thirdSwiper = new Swiper(".third-slide-content", {
-   loop: true,
-   centerSlide: 'true',
-   fade: 'true',
-   grabCursor: 'true',
-   enabled: false,
-   pagination: {
-      clickable: true,
-      dynamicBullets: true,
-   },
-   breakpoints: {
-      0: {
-         slidesPerView: 3,
-         enabled: true,
-      },
-      380: {
-         slidesPerView: 4,
-      },
-      768: {
          enabled: false,
       },
    },
