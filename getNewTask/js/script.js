@@ -35,7 +35,7 @@ const list2 = document.querySelector('.footer__list-2');
 const list3 = document.querySelector('.footer__list-3');
 
 title1.addEventListener('click', () => {
-   title1.classList.add('footer-active')
+   title1.classList.toggle('footer-active')
    list1.classList.toggle('footer-active')
 })
 title2.addEventListener('click', () => {
@@ -55,11 +55,15 @@ let thirdSwiper = new Swiper(".third-slide-content", {
    enabled: false,
    breakpoints: {
       0: {
-         slidesPerView: 3,
+         slidesPerView: 2.5,
          enabled: true,
       },
       380: {
-         slidesPerView: 4,
+         slidesPerView: 3.5,
+         enabled: true,
+      },
+      490: {
+         slidesPerView: 5,
          enabled: true,
       },
       768: {

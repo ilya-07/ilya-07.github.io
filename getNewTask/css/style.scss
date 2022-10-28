@@ -51,22 +51,23 @@
    font-style: normal;
    font-weight: 400;
    font-size: 15px;
-   line-height: 148%;
+   line-height: 15px;
    font-feature-settings: "pnum" on, "lnum" on;
    color: #1e1e1e;
    position: relative;
    &::after {
       position: absolute;
       content: "";
-      right: -4px;
+      right: -14px;
       top: 50%;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      -moz-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      -o-transform: translateY(-50%);
-      width: 8px;
-      height: 4px;
+      transform: translateY(-37%);
+      -webkit-transform: translateY(-37%);
+      -moz-transform: translateY(-37%);
+      -ms-transform: translateY(-37%);
+      -o-transform: translateY(-37%);
+      width: 6px;
+      height: 12px;
+      background: url("../img/link.svg") center/cover no-repeat;
    }
 }
 .main {
@@ -303,11 +304,13 @@
       // padding: 0;
       // z-index: 1;
       .swiper-slide {
-         width: 100px;
          height: 50px;
          line-height: 50px;
          background: #f7f7f8;
          border-radius: 4px;
+         @media (max-width: 768px) {
+            width: 100px;
+         }
       }
       .swiper-wrapper {
          column-gap: 10px;
@@ -548,8 +551,9 @@
    }
 
    &__info {
-      // margin-left: 137px;
-      width: 100%;
+      @media (max-width: 1200px) {
+         width: 100%;
+      }
       .row {
          column-gap: 56px;
          @media (max-width: 1200px) {
@@ -1391,6 +1395,9 @@
       @media (max-width: 576px) {
          height: 154px;
       }
+      .swiper-slide {
+         width: 242px;
+      }
    }
    .second-slide-content {
       @media (max-width: 576px) {
@@ -1522,8 +1529,12 @@
          align-items: start;
          justify-content: start;
          column-gap: 67px;
+         width: auto;
          @media (max-width: 1200px) {
             row-gap: 20px;
+         }
+         .swiper-slide {
+            width: auto;
          }
       }
       &:nth-child(1) {
@@ -1757,6 +1768,78 @@
       margin-bottom: 24px;
       font-feature-settings: "pnum" on, "lnum" on;
       color: #ffffff;
+      &-1 {
+         position: relative;
+         @media (max-width: 768px) {
+            &::before {
+               position: absolute;
+               content: "";
+               background: url("../img/arr-bottm.svg") center/cover no-repeat;
+               width: 11px;
+               height: 5px;
+               top: 40%;
+               right: 25px;
+            }
+
+            &.footer-active {
+               &::before {
+                  transform: rotate(180deg);
+                  -webkit-transform: rotate(180deg);
+                  -moz-transform: rotate(180deg);
+                  -ms-transform: rotate(180deg);
+                  -o-transform: rotate(180deg);
+               }
+            }
+         }
+      }
+      &-2 {
+         position: relative;
+         @media (max-width: 768px) {
+            &::before {
+               position: absolute;
+               content: "";
+               background: url("../img/arr-bottm.svg") center/cover no-repeat;
+               width: 11px;
+               height: 5px;
+               top: 40%;
+               right: 25px;
+            }
+
+            &.footer-active-2 {
+               &::before {
+                  transform: rotate(180deg);
+                  -webkit-transform: rotate(180deg);
+                  -moz-transform: rotate(180deg);
+                  -ms-transform: rotate(180deg);
+                  -o-transform: rotate(180deg);
+               }
+            }
+         }
+      }
+      &-3 {
+         position: relative;
+         @media (max-width: 768px) {
+            &::before {
+               position: absolute;
+               content: "";
+               background: url("../img/arr-bottm.svg") center/cover no-repeat;
+               width: 11px;
+               height: 5px;
+               top: 40%;
+               right: 25px;
+            }
+
+            &.footer-active-3 {
+               &::before {
+                  transform: rotate(180deg);
+                  -webkit-transform: rotate(180deg);
+                  -moz-transform: rotate(180deg);
+                  -ms-transform: rotate(180deg);
+                  -o-transform: rotate(180deg);
+               }
+            }
+         }
+      }
       @media (max-width: 768px) {
          position: relative;
          left: 0;
