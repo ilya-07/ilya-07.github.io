@@ -46,6 +46,27 @@ title3.addEventListener('click', () => {
    title3.classList.toggle('footer-active-3')
    list3.classList.toggle('footer-active-3')
 })
+
+let thirdSwiper = new Swiper(".third-slide-content", {
+   loop: true,
+   centerSlide: 'true',
+   fade: 'true',
+   grabCursor: 'true',
+   enabled: false,
+   breakpoints: {
+      0: {
+         slidesPerView: 3,
+         enabled: true,
+      },
+      380: {
+         slidesPerView: 4,
+         enabled: true,
+      },
+      768: {
+         enabled: false,
+      },
+   },
+});
 let swiper = new Swiper(".slide-content", {
    slidesPerView: 3,
    spaceBetween: 20,
@@ -64,24 +85,9 @@ let swiper = new Swiper(".slide-content", {
    },
 
    breakpoints: {
-      // 0: {
-      //    slidesPerView: 1,
-      // },
-      // 620: {
-      //    slidesPerView: 1,
-      // },
       0: {
          slidesPerView: 1,
       },
-      // 768: {
-      //    slidesPerView: 3,
-      // },
-      // 992: {
-      //    slidesPerView: 3,
-      // },
-      // 1200: {
-      //    slidesPerView: 3,
-      // },
    },
 });
 
@@ -105,25 +111,7 @@ let secondSwiper = new Swiper(".second-slide-content", {
    },
 });
 
-let thirdSwiper = new Swiper(".third-slide-content", {
-   loop: true,
-   centerSlide: 'true',
-   fade: 'true',
-   grabCursor: 'true',
-   enabled: false,
-   breakpoints: {
-      0: {
-         slidesPerView: 3,
-         enabled: true,
-      },
-      380: {
-         slidesPerView: 4,
-      },
-      768: {
-         enabled: false,
-      },
-   },
-});
+
 
 
 const btn1 = document.querySelectorAll('.help__btn')[0];
