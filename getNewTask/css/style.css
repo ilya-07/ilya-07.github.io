@@ -429,6 +429,14 @@ h6 {
   line-height: 50px;
   background: #f7f7f8;
   border-radius: 4px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+.header .thirdSwiper .swiper-slide:hover {
+  background: #60c0c3;
 }
 @media (max-width: 768px) {
   .header .thirdSwiper .swiper-slide {
@@ -447,6 +455,11 @@ h6 {
   line-height: 148%;
   text-align: center;
   color: #404040;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 @media (max-width: 992px) {
   .header__link {
@@ -458,6 +471,9 @@ h6 {
   .header__link {
     display: inline-block;
     width: 100px;
+  }
+  .header__link:hover {
+    color: #fff;
   }
 }
 .header__body {
@@ -1374,6 +1390,11 @@ h6 {
 .news__about {
   margin-bottom: 32px;
 }
+@media (max-width: 1260px) {
+  .news__link {
+    margin-right: 16px;
+  }
+}
 .news__info {
   width: 100%;
 }
@@ -2005,6 +2026,12 @@ h6 {
 .footer__top {
   margin-bottom: 55px;
 }
+@media (max-width: 576px) {
+  .footer__top {
+    width: 288px;
+    display: inline-block;
+  }
+}
 @media (max-width: 992px) {
   .footer .container {
     text-align: center;
@@ -2050,6 +2077,11 @@ h6 {
   margin-bottom: 24px;
   font-feature-settings: "pnum" on, "lnum" on;
   color: #ffffff;
+}
+@media (max-width: 576px) {
+  .footer__title {
+    display: inline-block;
+  }
 }
 .footer__title-1 {
   position: relative;
@@ -2198,6 +2230,11 @@ h6 {
     display: none;
   }
 }
+@media (max-width: 576px) {
+  .footer__center {
+    display: inline-block;
+  }
+}
 .footer__bottom {
   padding-top: 88px;
   position: relative;
@@ -2221,10 +2258,9 @@ h6 {
     padding-top: 0;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 576px) {
   .footer__bottom {
-    position: relative;
-    left: -60px;
+    display: inline-block;
   }
 }
 @media (max-width: 992px) {
@@ -2237,6 +2273,12 @@ h6 {
   .footer__block {
     flex: 0 0 50%;
     text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .footer__block {
+    width: 288px;
+    display: inline-block;
   }
 }
 .footer__logo {
@@ -2332,6 +2374,12 @@ h6 {
 @media (max-width: 992px) {
   .footer__back {
     margin: 0 auto;
+  }
+}
+@media (max-width: 576px) {
+  .footer__back {
+    width: 288px;
+    display: inline-block;
   }
 }
 @media (max-width: 992px) {

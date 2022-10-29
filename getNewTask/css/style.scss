@@ -319,9 +319,17 @@
          line-height: 50px;
          background: #f7f7f8;
          border-radius: 4px;
+         &:hover {
+            background: #60c0c3;
+         }
          @media (max-width: 768px) {
             width: 100px;
          }
+         transition: all 0.5s;
+         -webkit-transition: all 0.5s;
+         -moz-transition: all 0.5s;
+         -ms-transition: all 0.5s;
+         -o-transition: all 0.5s;
       }
       .swiper-wrapper {
          column-gap: 10px;
@@ -340,6 +348,11 @@
       // white-space: nowrap;
       text-align: center;
       color: #404040;
+      transition: all 0.5s;
+      -webkit-transition: all 0.5s;
+      -moz-transition: all 0.5s;
+      -ms-transition: all 0.5s;
+      -o-transition: all 0.5s;
       @media (max-width: 992px) {
          font-size: 14px;
          line-height: 158%;
@@ -347,6 +360,9 @@
       @media (max-width: 768px) {
          display: inline-block;
          width: 100px;
+         &:hover {
+            color: #fff;
+         }
       }
    }
 
@@ -1151,6 +1167,9 @@
    }
 
    &__link {
+      @media (max-width: 1260px) {
+         margin-right: 16px;
+      }
    }
 
    &__info {
@@ -1780,6 +1799,10 @@
    overflow-x: hidden;
    &__top {
       margin-bottom: 55px;
+      @media (max-width: 576px) {
+         width: 288px;
+         display: inline-block;
+      }
    }
 
    .container {
@@ -1821,6 +1844,9 @@
       margin-bottom: 24px;
       font-feature-settings: "pnum" on, "lnum" on;
       color: #ffffff;
+      @media (max-width: 576px) {
+         display: inline-block;
+      }
       &-1 {
          position: relative;
          @media (max-width: 768px) {
@@ -1975,6 +2001,9 @@
             display: none;
          }
       }
+      @media (max-width: 576px) {
+         display: inline-block;
+      }
    }
 
    &__bottom {
@@ -1995,9 +2024,8 @@
       @media (max-width: 768px) {
          padding-top: 0;
       }
-      @media (max-width: 450px) {
-         position: relative;
-         left: -60px;
+      @media (max-width: 576px) {
+         display: inline-block;
       }
       .row {
          @media (max-width: 992px) {
@@ -2011,6 +2039,10 @@
       @media (max-width: 992px) {
          flex: 0 0 50%;
          text-align: center;
+      }
+      @media (max-width: 576px) {
+         width: 288px;
+         display: inline-block;
       }
    }
 
@@ -2094,6 +2126,10 @@
       margin-bottom: 24px;
       @media (max-width: 992px) {
          margin: 0 auto;
+      }
+      @media (max-width: 576px) {
+         width: 288px;
+         display: inline-block;
       }
    }
 
