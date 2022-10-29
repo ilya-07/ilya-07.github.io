@@ -1846,6 +1846,7 @@
       color: #ffffff;
       @media (max-width: 576px) {
          display: inline-block;
+         width: 250px;
       }
       &-1 {
          position: relative;
@@ -1858,6 +1859,9 @@
                height: 5px;
                top: 40%;
                right: 25px;
+               @media (max-width: 576px) {
+                  right: -40px;
+               }
             }
 
             &.footer-active {
@@ -1882,6 +1886,9 @@
                height: 5px;
                top: 40%;
                right: 25px;
+               @media (max-width: 576px) {
+                  right: -40px;
+               }
             }
 
             &.footer-active-2 {
@@ -1906,6 +1913,9 @@
                height: 5px;
                top: 40%;
                right: 25px;
+               @media (max-width: 576px) {
+                  right: -40px;
+               }
             }
 
             &.footer-active-3 {

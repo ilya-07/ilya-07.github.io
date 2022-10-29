@@ -2081,6 +2081,7 @@ h6 {
 @media (max-width: 576px) {
   .footer__title {
     display: inline-block;
+    width: 250px;
   }
 }
 .footer__title-1 {
@@ -2096,6 +2097,13 @@ h6 {
     top: 40%;
     right: 25px;
   }
+}
+@media (max-width: 768px) and (max-width: 576px) {
+  .footer__title-1::before {
+    right: -40px;
+  }
+}
+@media (max-width: 768px) {
   .footer__title-1.footer-active::before {
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
@@ -2117,6 +2125,13 @@ h6 {
     top: 40%;
     right: 25px;
   }
+}
+@media (max-width: 768px) and (max-width: 576px) {
+  .footer__title-2::before {
+    right: -40px;
+  }
+}
+@media (max-width: 768px) {
   .footer__title-2.footer-active-2::before {
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
@@ -2138,6 +2153,13 @@ h6 {
     top: 40%;
     right: 25px;
   }
+}
+@media (max-width: 768px) and (max-width: 576px) {
+  .footer__title-3::before {
+    right: -40px;
+  }
+}
+@media (max-width: 768px) {
   .footer__title-3.footer-active-3::before {
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
