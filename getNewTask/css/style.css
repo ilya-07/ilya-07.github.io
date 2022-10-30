@@ -287,10 +287,26 @@ h6 {
 }
 .header__top {
   padding: 25px 0;
+  position: relative;
 }
 @media (max-width: 576px) {
   .header__top {
     padding: 16px 0px 24px 0px;
+  }
+}
+.header__top::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #eaeaea;
+}
+@media (max-width: 768px) {
+  .header__top::after {
+    height: 0;
+    background: transparent;
   }
 }
 .header__logo .row {
